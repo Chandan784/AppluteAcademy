@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom"; // ✅ import Link
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ["Why Us", "Courses", "About", "Feedback", "Contact"];
+  // Update links with route paths
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Why Us", path: "/whyus" },
+    { name: "Courses", path: "/courses" },
+    { name: "About", path: "/about" },
+    { name: "Feedback", path: "/feedback" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <nav className="bg-white text-gray-900 fixed w-full top-0 left-0 z-50 shadow-md">
@@ -22,13 +31,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-[15px] font-semibold">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href={`#${link.toLowerCase().replace(" ", "")}`}
+            <li key={link.name}>
+              <Link
+                to={link.path} // ✅ use Link instead of a
                 className="text-[#0033A0] hover:text-[#007BFF] transition-colors duration-300"
               >
-                {link}
-              </a>
+                {link.name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -53,15 +62,15 @@ export default function Navbar() {
             className="md:hidden bg-white shadow-lg"
           >
             <ul className="flex flex-col items-center space-y-6 py-6 font-semibold text-[#0033A0]">
-              {navLinks.map((item) => (
-                <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase().replace(" ", "")}`}
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.path} // ✅ use Link for mobile too
                     className="hover:text-[#007BFF] transition-colors duration-300"
                     onClick={() => setIsOpen(false)}
                   >
-                    {item}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

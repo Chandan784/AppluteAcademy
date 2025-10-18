@@ -1,30 +1,11 @@
 import React from "react";
-
-const courses = [
-  {
-    name: "Fullstack Development (MERN)",
-    description:
-      "Master MongoDB, Express, React, and Node.js with hands-on projects to become an industry-ready fullstack developer.",
-    img: "https://wallpapercave.com/wp/wp8903890.jpg",
-    price: "₹20,000",
-  },
-  {
-    name: "Frontend Development (React)",
-    description:
-      "Build dynamic and responsive UIs using React, Tailwind CSS, and JavaScript — crafted for real-world web apps.",
-    img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60",
-    price: "₹12,000",
-  },
-  {
-    name: "Backend Development (Node.js)",
-    description:
-      "Learn backend architecture, API development, and database management with Node.js and Express.",
-    img: "https://wallpaperbat.com/img/818850-nodejs-hd-wallpaper-and-background.png",
-    price: "₹12000",
-  },
-];
+import { useNavigate } from "react-router-dom";
+import { courses } from "../Coursedata.js";
+import { FaClock, FaRupeeSign } from "react-icons/fa";
 
 export default function Courses() {
+  const navigate = useNavigate();
+
   return (
     <section
       id="courses"
@@ -43,44 +24,54 @@ export default function Courses() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {courses.map((c, index) => (
           <div
-            key={c.name}
-            className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 border border-[#cdd9ff]"
+            key={c.id}
+            className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-500 border border-[#cdd9ff] flex flex-col"
             style={{
               animation: `fadeInUp 0.8s ease forwards`,
               animationDelay: `${index * 0.2}s`,
               opacity: 0,
             }}
           >
-            <img
-              src={c.img}
-              alt={c.name}
-              className="h-56 w-full object-cover transition-transform duration-500 hover:scale-110"
-            />
-            <div className="p-6 flex flex-col justify-between h-60">
+            {/* Image Section */}
+            <div className="overflow-hidden rounded-t-3xl">
+              <img
+                src={c.img}
+                alt={c.name}
+                className="h-56 w-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="p-6 flex flex-col flex-grow justify-between">
               <div>
-                <h3 className="text-xl font-bold text-[#002b7f] mb-2">
+                <h3 className="text-2xl font-bold text-[#002b7f] mb-3">
                   {c.name}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {c.description}
                 </p>
+
+                {/* Duration & Price */}
+                <div className="flex justify-between items-center mb-4 text-gray-700 font-semibold text-sm sm:text-base">
+                  <div className="flex items-center gap-1">
+                    <FaClock className="text-[#0043ce]" />
+                    <span>{c.duration}</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <FaRupeeSign className="text-[#0043ce]" />
+                    <span>{c.price}</span>
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-5 flex items-center justify-between">
-                <span className="text-[#0043ce] font-bold text-lg">
-                  {c.price}
-                </span>
-                <a
-                  href={`https://wa.me/916370302039?text=${encodeURIComponent(
-                    `Hello! I am interested in enrolling in your course: ${c.name}. Please share more details about the schedule, fees, and enrollment process.`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {/* Details Button */}
+              <div className="text-center mt-3">
+                <button
+                  onClick={() => navigate(`/course/${c.id}`)}
+                  className="bg-gradient-to-r from-[#0043ce] to-[#007bff] text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:from-[#003bb0] hover:to-[#0060e0] transition-all duration-300 w-full sm:w-auto"
                 >
-                  <button className="bg-gradient-to-r from-[#0043ce] to-[#007bff] text-white px-5 py-2 rounded-lg font-semibold shadow hover:from-[#003bb0] hover:to-[#0060e0] transition-all duration-300">
-                    Enroll Now
-                  </button>
-                </a>
+                  Details
+                </button>
               </div>
             </div>
           </div>
@@ -91,14 +82,8 @@ export default function Courses() {
       <style>
         {`
           @keyframes fadeInUp {
-            0% {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
           }
         `}
       </style>
