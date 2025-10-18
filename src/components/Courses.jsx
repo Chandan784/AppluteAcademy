@@ -6,21 +6,21 @@ const courses = [
     description:
       "Master MongoDB, Express, React, and Node.js with hands-on projects to become an industry-ready fullstack developer.",
     img: "https://wallpapercave.com/wp/wp8903890.jpg",
-    price: "₹14,999",
+    price: "₹20,000",
   },
   {
     name: "Frontend Development (React)",
     description:
       "Build dynamic and responsive UIs using React, Tailwind CSS, and JavaScript — crafted for real-world web apps.",
     img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60",
-    price: "₹9,999",
+    price: "₹12,000",
   },
   {
     name: "Backend Development (Node.js)",
     description:
       "Learn backend architecture, API development, and database management with Node.js and Express.",
     img: "https://wallpaperbat.com/img/818850-nodejs-hd-wallpaper-and-background.png",
-    price: "₹11,999",
+    price: "₹12000",
   },
 ];
 
@@ -70,9 +70,17 @@ export default function Courses() {
                 <span className="text-[#0043ce] font-bold text-lg">
                   {c.price}
                 </span>
-                <button className="bg-gradient-to-r from-[#0043ce] to-[#007bff] text-white px-5 py-2 rounded-lg font-semibold shadow hover:from-[#003bb0] hover:to-[#0060e0] transition-all duration-300">
-                  Enroll Now
-                </button>
+                <a
+                  href={`https://wa.me/916370302039?text=${encodeURIComponent(
+                    `Hello! I am interested in enrolling in your course: ${courses.name}. Please share more details about the schedule, fees, and enrollment process.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="bg-gradient-to-r from-[#0043ce] to-[#007bff] text-white px-5 py-2 rounded-lg font-semibold shadow hover:from-[#003bb0] hover:to-[#0060e0] transition-all duration-300">
+                    Enroll Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
