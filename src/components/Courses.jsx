@@ -72,7 +72,7 @@ export default function Courses() {
                 </span>
                 <a
                   href={`https://wa.me/916370302039?text=${encodeURIComponent(
-                    `Hello! I am interested in enrolling in your course: ${courses.name}. Please share more details about the schedule, fees, and enrollment process.`
+                    `Hello! I am interested in enrolling in your course: ${c.name}. Please share more details about the schedule, fees, and enrollment process.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
