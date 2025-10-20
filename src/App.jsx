@@ -18,7 +18,7 @@ const HomePage = () => (
     <WhyUs />
     <Courses />
     <About />
-    <Feedback />
+    {/* <Feedback /> */}
     <Contact />
   </>
 );

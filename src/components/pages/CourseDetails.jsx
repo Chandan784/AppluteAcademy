@@ -52,7 +52,7 @@ Please share more details about this course.
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-900 pb-24">
+    <div className="relative min-h-screen bg-gradient-to-b mt-4 from-blue-50 to-white text-gray-900 pb-24">
       <div className="max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-12">
         {/* Course Title */}
         <h1 className="text-3xl md:text-5xl font-extrabold mb-3 text-center text-[#0033A0] leading-tight">

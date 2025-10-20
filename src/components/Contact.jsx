@@ -33,12 +33,12 @@ export default function Contact() {
             {
               icon: <Mail className="text-[#0043ce] w-6 h-6" />,
               title: "Email",
-              text: "info@appluteacademy.com",
+              text: "appluteacademy@gmail.com",
             },
             {
               icon: <Phone className="text-[#0043ce] w-6 h-6" />,
               title: "Phone",
-              text: "+91 98765 43210",
+              text: "+91 6370302039",
             },
             {
               icon: <MapPin className="text-[#0043ce] w-6 h-6" />,
