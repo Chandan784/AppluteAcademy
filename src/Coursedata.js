@@ -13,7 +13,7 @@ export const courses = [
       {
         module: "Module 1: HTML data",
         topics: [
-          "HTML Document Structure",
+          "HTML Document Structure complete",
           "Headings, Paragraphs, Lists, Links, Images",
           "Forms & Input Elements",
           "Semantic Tags (header, section, footer, article)",
