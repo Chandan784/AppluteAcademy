@@ -11,7 +11,7 @@ export const courses = [
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
-        module: "Module 1: HTML",
+        module: "Module 1: HTML data",
         topics: [
           "HTML Document Structure",
           "Headings, Paragraphs, Lists, Links, Images",
