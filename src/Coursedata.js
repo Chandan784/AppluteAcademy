@@ -11,9 +11,9 @@ export const courses = [
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
-        module: "Module 1: HTML data",
+        module: "Module 1: HTML",
         topics: [
-          "HTML Document Structure complete",
+          "HTML Document Structure",
           "Headings, Paragraphs, Lists, Links, Images",
           "Forms & Input Elements",
           "Semantic Tags (header, section, footer, article)",
@@ -134,59 +134,311 @@ export const courses = [
       },
     ],
   },
+
+  // ✅ React Course (Full)
   {
     id: "react",
-    name: "Frontend Development (React)",
+    name: "Frontend Development with React",
     description:
-      "Build dynamic and responsive UIs using React, Tailwind CSS, and JavaScript — crafted for real-world web apps.",
+      "Learn to build fast, scalable, and interactive user interfaces with React, React Router, and Redux Toolkit.",
     img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60",
     price: "₹12,000",
-    duration: "4 Months",
+    duration: "2 Months",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
-        module: "Module 1: HTML, CSS & JS",
-        topics: ["HTML Basics", "CSS Basics", "JS Fundamentals"],
+        module: "Module 1: JavaScript for React",
+        topics: [
+          "JS Fundamentals (Variables, Functions, Arrays, Objects)",
+          "ES6 Features (let, const, destructuring, spread, modules)",
+          "Async JS (Promises, Fetch, Async/Await)",
+        ],
       },
       {
         module: "Module 2: React Basics",
-        topics: ["JSX", "Components", "Props & State"],
+        topics: [
+          "JSX and Component Structure",
+          "Props and State",
+          "Events and Conditional Rendering",
+          "Lists and Keys",
+        ],
       },
       {
         module: "Module 3: React Advanced",
-        topics: ["Hooks", "Context API", "Routing", "Forms"],
+        topics: [
+          "React Hooks (useState, useEffect, useContext, useReducer)",
+          "Context API for State Management",
+          "React Router DOM",
+          "Form Handling and Validation",
+          "Error Boundaries, Lazy Loading, and Suspense",
+        ],
       },
       {
-        module: "Module 4: Projects",
-        topics: ["Build Portfolio Site", "Mini React Apps"],
+        module: "Module 4: Redux Toolkit",
+        topics: [
+          "Introduction to Redux Toolkit",
+          "createSlice and configureStore",
+          "useDispatch and useSelector Hooks",
+          "Async Actions using createAsyncThunk",
+          "Persisting State with Redux Persist",
+        ],
+      },
+      {
+        module: "Module 5: API Integration & Deployment",
+        topics: [
+          "Axios for API Calls",
+          "Handling Errors and Loaders",
+          "React Build and Deployment on Vercel",
+        ],
       },
     ],
   },
+
+  // ✅ Backend Course (Node.js + Express)
   {
-    id: "node",
-    name: "Backend Development (Node.js)",
+    id: "backend",
+    name: "Backend Development (Node.js + Express)",
     description:
-      "Learn backend architecture, API development, and database management with Node.js and Express.",
+      "Learn to design and build powerful backends and APIs using Node.js, Express, and MongoDB.",
     img: "https://wallpaperbat.com/img/818850-nodejs-hd-wallpaper-and-background.png",
     price: "₹12,000",
-    duration: "3 Months",
+    duration: "2 Months",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
-        module: "Module 1: Node.js Basics",
-        topics: ["Node Environment Setup", "Modules & NPM", "Event Loop"],
+        module: "Module 1: Node.js Fundamentals",
+        topics: [
+          "Introduction to Node.js",
+          "npm and Modules",
+          "File System, Streams, and Events",
+          "Event Loop and Async Programming",
+        ],
       },
       {
         module: "Module 2: Express.js",
-        topics: ["Routing", "Middleware", "REST APIs"],
+        topics: [
+          "Setting Up Express Server",
+          "Routing and Middleware",
+          "CRUD Operations and REST APIs",
+          "Error Handling and Validation",
+        ],
       },
       {
-        module: "Module 3: Database",
-        topics: ["MongoDB Basics", "CRUD Operations", "Mongoose ODM"],
+        module: "Module 3: Authentication & Security",
+        topics: [
+          "JWT Authentication",
+          "bcrypt Password Hashing",
+          "CORS, Helmet, and Security Practices",
+        ],
       },
       {
-        module: "Module 4: Projects & Deployment",
-        topics: ["API Project", "Deployment on Heroku/Vercel"],
+        module: "Module 4: MongoDB Integration",
+        topics: [
+          "Connecting to MongoDB Atlas",
+          "Mongoose Models and Schemas",
+          "CRUD Operations",
+          "Population and Relationships",
+        ],
+      },
+      {
+        module: "Module 5: Deployment",
+        topics: ["Environment Variables", "Deployment on Render/Heroku"],
+      },
+    ],
+  },
+
+  // ✅ JavaScript Basic
+  {
+    id: "js-basic",
+    name: "JavaScript Basics",
+    description:
+      "Start your journey into programming with JavaScript — the foundation of web development.",
+    img: "https://wallpaperbat.com/img/343227-javascript-wallpaper-javascript.jpg",
+    price: "₹699",
+    duration: "7 days",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Core Concepts",
+        topics: [
+          "Introduction to JS",
+          "Variables, Data Types, Operators",
+          "Conditionals and Loops",
+          "Functions and Scope",
+        ],
+      },
+      {
+        module: "Module 2: DOM & Events",
+        topics: ["Selecting Elements", "Event Listeners", "DOM Manipulation"],
+      },
+    ],
+  },
+
+  // ✅ JavaScript Advanced
+  {
+    id: "js-complete",
+    name: "JavaScript Complete Course (Basic to Advanced)",
+    description:
+      "Master JavaScript from the ground up — start with the basics, learn DOM manipulation, and progress to advanced ES6+, async programming, and OOP concepts.",
+    img: "https://wallpaperbat.com/img/364232-graphics.png",
+    price: "₹5,000",
+    duration: "1 Months",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: JavaScript Basics",
+        topics: [
+          "Introduction to JavaScript and Setup",
+          "Variables (var, let, const)",
+          "Data Types and Type Conversion",
+          "Operators and Expressions",
+          "Conditional Statements (if, else, switch)",
+          "Loops (for, while, do-while)",
+          "Functions and Scope",
+        ],
+      },
+      {
+        module: "Module 2: DOM and Events",
+        topics: [
+          "The Document Object Model (DOM)",
+          "Selecting and Modifying Elements",
+          "Event Handling (click, input, submit)",
+          "Form Validation using JS",
+          "LocalStorage and SessionStorage",
+          "Basic Projects: To-Do App, Calculator",
+        ],
+      },
+      {
+        module: "Module 3: Intermediate JavaScript",
+        topics: [
+          "Arrays and Objects Deep Dive",
+          "Array Methods (map, filter, reduce, forEach)",
+          "String and Date Manipulation",
+          "Error Handling (try, catch, finally)",
+          "JSON and Data Parsing",
+          "Module Exports and Imports (intro to ES Modules)",
+        ],
+      },
+      {
+        module: "Module 4: Advanced JavaScript",
+        topics: [
+          "ES6+ Features (Destructuring, Spread, Rest, Template Literals)",
+          "Arrow Functions and Default Parameters",
+          "Closures, Callbacks, and Higher-Order Functions",
+          "Promises, Async/Await, and Fetch API",
+          "Event Loop and Execution Context",
+          "Prototypes, Classes, and Inheritance",
+        ],
+      },
+      {
+        module: "Module 5: Real-World Applications",
+        topics: [
+          "API Integration (REST APIs with Fetch and Axios)",
+          "Asynchronous Operations and Error Handling",
+          "Building Interactive UI with Vanilla JS",
+          "Debugging and Performance Optimization",
+          "Project: Weather App using OpenWeather API",
+        ],
+      },
+      {
+        module: "Module 6: Final Projects & Interview Prep",
+        topics: [
+          "Mini Projects: Quiz App, E-commerce Cart, Notes App",
+          "JavaScript Best Practices and Code Quality",
+          "Common Interview Questions and Logic Building",
+          "Version Control with Git & GitHub (Basics)",
+          "Final Capstone Project Submission",
+        ],
+      },
+    ],
+  },
+  // ✅ CSS Course
+  {
+    id: "css",
+    name: "CSS Mastery",
+    description:
+      "Learn how to style and design beautiful, responsive websites with modern CSS techniques.",
+    img: "https://wallpaperaccess.com/full/2987572.jpg",
+    price: "₹2,999",
+    duration: "15 days",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Fundamentals",
+        topics: [
+          "Selectors and Specificity",
+          "Box Model, Margin, Padding, Borders",
+          "Display and Positioning",
+        ],
+      },
+      {
+        module: "Module 2: Layouts and Responsive Design",
+        topics: [
+          "Flexbox and Grid",
+          "Media Queries",
+          "Transitions and Animations",
+        ],
+      },
+    ],
+  },
+
+  // ✅ Git & GitHub Course
+  {
+    id: "git",
+    name: "Git & GitHub",
+    description:
+      "Master version control, collaboration, and project management using Git and GitHub.",
+    img: "https://wallpaperbat.com/img/8622048-git-and-github-at-work.jpg",
+    price: "₹2,000",
+    duration: "7 Days",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Git Basics",
+        topics: [
+          "Version Control Overview",
+          "Installing and Configuring Git",
+          "Common Commands (init, add, commit, status)",
+        ],
+      },
+      {
+        module: "Module 2: GitHub Workflow",
+        topics: [
+          "Pushing and Pulling Repos",
+          "Branching and Merging",
+          "Pull Requests and Issues",
+          "Using .gitignore",
+        ],
+      },
+    ],
+  },
+
+  // ✅ MongoDB Course
+  {
+    id: "mongodb",
+    name: "MongoDB Essentials",
+    description:
+      "Learn to design and manage databases with MongoDB — the most popular NoSQL database.",
+    img: "https://wallpapercave.com/wp/wp8724894.png",
+    price: "₹5,000",
+    duration: "1 Month",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Introduction & CRUD",
+        topics: [
+          "NoSQL Concepts",
+          "CRUD Operations in Mongo Shell",
+          "Data Modeling and Collections",
+        ],
+      },
+      {
+        module: "Module 2: Mongoose ODM",
+        topics: [
+          "Schemas and Models",
+          "Relationships (1:1, 1:Many)",
+          "Aggregation and Indexing",
+        ],
       },
     ],
   },

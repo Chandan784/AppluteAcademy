@@ -5,6 +5,7 @@ import { FaClock, FaRupeeSign } from "react-icons/fa";
 
 export default function Courses() {
   const navigate = useNavigate();
+  //jhjg
 
   return (
     <section
