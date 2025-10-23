@@ -64,14 +64,15 @@ Please share more details about this course.
 
         {/* Demo Video */}
         <div className="w-full mb-8">
-          <iframe
+          {/* <iframe
             width="100%"
             height="280"
             src={course.demoVideo}
             title="Demo Video"
             className="rounded-xl shadow-lg md:h-[420px]"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
+          <img src={course.img} alt="" />
         </div>
 
         {/* Course Details */}
