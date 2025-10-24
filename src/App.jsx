@@ -10,6 +10,9 @@ import Feedback from "./components/Feedback";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CourseDetails from "./components/pages/CourseDetails";
+import LiveTraining from "./components/LiveTraining";
+import IntershipPlacement from "./components/IntershipPlacement";
+import PaymentSection from "./components/PaymentSection";
 
 // Home page containing all sections
 const HomePage = () => (
@@ -17,8 +20,12 @@ const HomePage = () => (
     <Slider />
     <WhyUs />
     <Courses />
+    <LiveTraining />
+    <IntershipPlacement />
+    <PaymentSection />
     <About />
     {/* <Feedback /> */}
+
     <Contact />
   </>
 );
