@@ -6,8 +6,8 @@ export const courses = [
     description:
       "Master MongoDB, Express, React, and Node.js with hands-on projects to become an industry-ready fullstack developer.",
     img: "https://wallpapercave.com/wp/wp8903890.jpg",
-    price: "₹20,000",
-    duration: "6 Months",
+    price: "₹12,999",
+    duration: "4 Months",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
@@ -143,8 +143,8 @@ export const courses = [
     description:
       "Learn to build fast, scalable, and interactive user interfaces with React, React Router, and Redux Toolkit.",
     img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60",
-    price: "₹12,000",
-    duration: "2 Months",
+    price: "₹4,999",
+    duration: "1 Months",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
@@ -202,8 +202,8 @@ export const courses = [
     description:
       "Learn to design and build powerful backends and APIs using Node.js, Express, and MongoDB.",
     img: "https://wallpaperbat.com/img/818850-nodejs-hd-wallpaper-and-background.png",
-    price: "₹12,000",
-    duration: "2 Months",
+    price: "₹4,999",
+    duration: "1 Months",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
@@ -243,7 +243,7 @@ export const courses = [
       },
       {
         module: "Module 5: Deployment",
-        topics: ["Environment Variables", "Deployment on Render/Heroku"],
+        topics: ["Environment Variables", "Deployment on vercel"],
       },
     ],
   },
@@ -390,7 +390,7 @@ export const courses = [
     description:
       "Master version control, collaboration, and project management using Git and GitHub.",
     img: "https://wallpaperbat.com/img/8622048-git-and-github-at-work.jpg",
-    price: "₹1,999",
+    price: "₹999",
     duration: "7 Days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
