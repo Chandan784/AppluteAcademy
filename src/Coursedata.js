@@ -25,12 +25,13 @@ export const courses = [
         module: "Module 2: CSS",
         topics: [
           "Selectors and Specificity",
+          "CSS Variables and Units (em, rem, vh, vw)",
           "Box Model, Margins, Padding, Borders",
           "Flexbox and Grid Layouts",
           "Positioning and Display Properties",
           "Transitions, Transforms, and Animations",
           "Media Queries and Responsive Design",
-          "CSS Variables and Units (em, rem, vh, vw)",
+          ,
         ],
       },
       {
@@ -248,31 +249,31 @@ export const courses = [
   },
 
   // ✅ JavaScript Basic
-  {
-    id: "js-basic",
-    name: "JavaScript Basics",
-    description:
-      "Start your journey into programming with JavaScript — the foundation of web development.",
-    img: "https://wallpaperbat.com/img/343227-javascript-wallpaper-javascript.jpg",
-    price: "₹699",
-    duration: "7 days",
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    syllabus: [
-      {
-        module: "Module 1: Core Concepts",
-        topics: [
-          "Introduction to JS",
-          "Variables, Data Types, Operators",
-          "Conditionals and Loops",
-          "Functions and Scope",
-        ],
-      },
-      {
-        module: "Module 2: DOM & Events",
-        topics: ["Selecting Elements", "Event Listeners", "DOM Manipulation"],
-      },
-    ],
-  },
+  // {
+  //   id: "js-basic",
+  //   name: "JavaScript Basics",
+  //   description:
+  //     "Start your journey into programming with JavaScript — the foundation of web development.",
+  //   img: "https://wallpaperbat.com/img/343227-javascript-wallpaper-javascript.jpg",
+  //   price: "₹699",
+  //   duration: "7 days",
+  //   demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  //   syllabus: [
+  //     {
+  //       module: "Module 1: Core Concepts",
+  //       topics: [
+  //         "Introduction to JS",
+  //         "Variables, Data Types, Operators",
+  //         "Conditionals and Loops",
+  //         "Functions and Scope",
+  //       ],
+  //     },
+  //     {
+  //       module: "Module 2: DOM & Events",
+  //       topics: ["Selecting Elements", "Event Listeners", "DOM Manipulation"],
+  //     },
+  //   ],
+  // },
 
   // ✅ JavaScript Advanced
   {
@@ -281,8 +282,8 @@ export const courses = [
     description:
       "Master JavaScript from the ground up — start with the basics, learn DOM manipulation, and progress to advanced ES6+, async programming, and OOP concepts.",
     img: "https://wallpaperbat.com/img/364232-graphics.png",
-    price: "₹5,000",
-    duration: "1 Months",
+    price: "₹1,999",
+    duration: "15days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
@@ -359,7 +360,7 @@ export const courses = [
     description:
       "Learn how to style and design beautiful, responsive websites with modern CSS techniques.",
     img: "https://wallpaperaccess.com/full/2987572.jpg",
-    price: "₹2,999",
+    price: "₹1,999",
     duration: "15 days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
@@ -389,7 +390,7 @@ export const courses = [
     description:
       "Master version control, collaboration, and project management using Git and GitHub.",
     img: "https://wallpaperbat.com/img/8622048-git-and-github-at-work.jpg",
-    price: "₹2,000",
+    price: "₹1,999",
     duration: "7 Days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
@@ -420,8 +421,8 @@ export const courses = [
     description:
       "Learn to design and manage databases with MongoDB — the most popular NoSQL database.",
     img: "https://wallpapercave.com/wp/wp8724894.png",
-    price: "₹5,000",
-    duration: "1 Month",
+    price: "₹2,000",
+    duration: "15days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {
