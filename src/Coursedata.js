@@ -443,4 +443,92 @@ export const courses = [
       },
     ],
   },
+
+  {
+    id: "cn",
+    name: "Computer Networks (CN)",
+    description:
+      "Learn how data travels across the internet. Understand networking layers, protocols, IP addressing, and security — with real-world examples and diagrams.",
+    img: "https://wallpaperaccess.com/full/12481513.jpg",
+    price: "₹1,999",
+    duration: "15 Days",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Introduction to Networking",
+        topics: [
+          "Basics of Data Communication",
+          "Network Topologies and Types (LAN, MAN, WAN)",
+          "Transmission Modes and Media",
+          "Network Devices (Router, Switch, Hub, Repeater)",
+        ],
+      },
+      {
+        module: "Module 2: OSI & TCP/IP Models",
+        topics: [
+          "7 Layers of OSI Model Explained",
+          "TCP/IP Model and Comparison with OSI",
+          "Encapsulation and Decapsulation Process",
+          "Real-Life Example: How Internet Works",
+        ],
+      },
+      {
+        module: "Module 3: IP Addressing & Routing",
+        topics: [
+          "IPv4 and IPv6 Addressing",
+          "Subnetting and Supernetting",
+          "Static vs Dynamic Routing",
+          "Routing Protocols (RIP, OSPF, BGP)",
+        ],
+      },
+      {
+        module: "Module 4: Data Link & Transport Layer",
+        topics: [
+          "Error Detection and Correction (Parity, CRC)",
+          "Flow Control and ARQ Protocols",
+          "TCP vs UDP",
+          "Port Numbers and Sockets",
+        ],
+      },
+      {
+        module: "Module 5: Network Security & Applications",
+        topics: [
+          "Firewalls, VPN, and Proxy Servers",
+          "Encryption and Network Attacks",
+          "HTTP, HTTPS, FTP, DNS, SMTP Protocols",
+          "Socket Programming Basics",
+        ],
+      },
+    ],
+  },
+  {
+    id: "os",
+    name: "Operating System (OS) Basics",
+    description:
+      "Get started with the core fundamentals of Operating Systems — understand how OS manages processes and resources.",
+    img: "https://wallpaperaccess.com/full/4911012.jpg",
+    price: "₹699",
+    duration: "3 Days",
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    syllabus: [
+      {
+        module: "Module 1: Introduction to Operating Systems",
+        topics: [
+          "What is an Operating System?",
+          "Functions and Components of OS",
+          "Types of Operating Systems (Batch, Time-Sharing, Real-Time)",
+          "System Calls and Kernel Overview",
+        ],
+      },
+      {
+        module: "Module 2: Process Management Basics",
+        topics: [
+          "Concept of Process and Threads",
+          "Process States and Life Cycle",
+          "CPU Scheduling Basics (FCFS, SJF, RR)",
+          "Introduction to Deadlocks",
+        ],
+      },
+    ],
+  },
 ];
