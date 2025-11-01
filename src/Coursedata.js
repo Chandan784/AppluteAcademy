@@ -450,8 +450,8 @@ export const courses = [
     description:
       "Learn how data travels across the internet. Understand networking layers, protocols, IP addressing, and security — with real-world examples and diagrams.",
     img: "https://wallpaperaccess.com/full/12481513.jpg",
-    price: "₹1,999",
-    duration: "15 Days",
+    price: "₹699",
+    duration: "3 Days",
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     syllabus: [
       {

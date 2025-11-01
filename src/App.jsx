@@ -13,6 +13,7 @@ import CourseDetails from "./components/pages/CourseDetails";
 import LiveTraining from "./components/LiveTraining";
 import IntershipPlacement from "./components/IntershipPlacement";
 import PaymentSection from "./components/PaymentSection";
+import QuizPage from "./components/pages/QuizHomePage";
 
 // Home page containing all sections
 const HomePage = () => (
@@ -24,6 +25,7 @@ const HomePage = () => (
     <IntershipPlacement />
     <PaymentSection />
     <About />
+
     {/* <Feedback /> */}
 
     <Contact />
@@ -39,6 +41,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/quiz" element={<QuizPage />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/whyus" element={<WhyUs />} />
