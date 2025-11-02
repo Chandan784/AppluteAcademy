@@ -1,1262 +1,1536 @@
-export const quizData = {
-  // ======================= REACT =======================
-  react: [
-    {
-      question: "What is JSX in React?",
-      options: [
-        "JavaScript XML",
-        "Java Syntax eXtension",
-        "JSON Extension",
-        "Java eXtended Syntax",
-      ],
-      answer: "JavaScript XML",
-    },
-    {
-      question:
-        "Which hook is used for managing state in functional components?",
-      options: ["useState", "useEffect", "useMemo", "useReducer"],
-      answer: "useState",
-    },
-    {
-      question: "What is the purpose of useEffect in React?",
-      options: [
-        "To handle side effects",
-        "To update DOM manually",
-        "To define routes",
-        "To render UI",
-      ],
-      answer: "To handle side effects",
-    },
-    {
-      question: "What is a React Fragment?",
-      options: ["A component wrapper", "A hook", "A library", "A reducer"],
-      answer: "A component wrapper",
-    },
-    {
-      question: "What is the virtual DOM?",
-      options: [
-        "A lightweight copy of real DOM",
-        "A real browser DOM",
-        "A database",
-        "An API",
-      ],
-      answer: "A lightweight copy of real DOM",
-    },
-    {
-      question: "How do you pass data from parent to child in React?",
-      options: ["Props", "State", "Context", "Refs"],
-      answer: "Props",
-    },
-    {
-      question: "What does lifting state up mean?",
-      options: [
-        "Moving state to a common ancestor",
-        "Deleting state",
-        "Using global variables",
-        "Creating context",
-      ],
-      answer: "Moving state to a common ancestor",
-    },
-    {
-      question: "What is the default method to render React components?",
-      options: [
-        "ReactDOM.render()",
-        "React.render()",
-        "renderDOM()",
-        "createDOM()",
-      ],
-      answer: "ReactDOM.render()",
-    },
-    {
-      question: "Which hook is used for performance optimization?",
-      options: ["useMemo", "useEffect", "useState", "useRef"],
-      answer: "useMemo",
-    },
-    {
-      question: "What is React Router used for?",
-      options: [
-        "Routing and navigation",
-        "Form handling",
-        "Data fetching",
-        "State management",
-      ],
-      answer: "Routing and navigation",
-    },
-    {
-      question: "What is Context API used for?",
-      options: [
-        "Prop drilling avoidance",
-        "API calls",
-        "Testing",
-        "Performance logging",
-      ],
-      answer: "Prop drilling avoidance",
-    },
-    {
-      question: "What are keys in React lists used for?",
-      options: [
-        "To uniquely identify elements",
-        "To encrypt data",
-        "To sort lists",
-        "To map components",
-      ],
-      answer: "To uniquely identify elements",
-    },
-    {
-      question: "Which method converts JSX into JavaScript?",
-      options: ["Babel", "Webpack", "ESLint", "Parcel"],
-      answer: "Babel",
-    },
-    {
-      question: "Which of these is a React state management library?",
-      options: ["Redux", "Axios", "Tailwind", "Reactstrap"],
-      answer: "Redux",
-    },
-    {
-      question: "What is the purpose of useRef hook?",
-      options: [
-        "Accessing DOM elements",
-        "Routing",
-        "Creating Context",
-        "Async requests",
-      ],
-      answer: "Accessing DOM elements",
-    },
-    {
-      question: "React is primarily used for building?",
-      options: ["User interfaces", "Servers", "Databases", "APIs"],
-      answer: "User interfaces",
-    },
-    {
-      question: "Which lifecycle method is replaced by useEffect?",
-      options: [
-        "componentDidMount",
-        "render",
-        "constructor",
-        "componentWillUnmount",
-      ],
-      answer: "componentDidMount",
-    },
-    {
-      question: "What is the default port for React apps?",
-      options: ["3000", "8000", "8080", "5000"],
-      answer: "3000",
-    },
-    {
-      question: "What is a controlled component in React?",
-      options: [
-        "Input managed by state",
-        "Component with props only",
-        "Stateless component",
-        "Pure component",
-      ],
-      answer: "Input managed by state",
-    },
-    {
-      question: "Which company developed React?",
-      options: ["Meta (Facebook)", "Google", "Microsoft", "Amazon"],
-      answer: "Meta (Facebook)",
-    },
-  ],
+export const quizData = [
+  {
+    subjectName: "C Programming",
+    icon: "https://cdn-icons-png.flaticon.com/512/3665/3665923.png",
+    questions: [
+      {
+        id: 1,
+        question: "Who is the father of C programming language?",
+        options: [
+          "James Gosling",
+          "Dennis Ritchie",
+          "Bjarne Stroustrup",
+          "Ken Thompson",
+        ],
+        correctAnswer: "Dennis Ritchie",
+        explanation: "C was developed by Dennis Ritchie at Bell Labs in 1972.",
+      },
+      {
+        id: 2,
+        question: "Which of the following is a valid C variable name?",
+        options: ["int", "float_num", "num 1", "2number"],
+        correctAnswer: "float_num",
+        explanation:
+          "C variable names cannot have spaces or start with numbers. ‘float_num’ is valid.",
+      },
+      {
+        id: 3,
+        question:
+          "Which keyword is used to prevent modification of a variable?",
+        options: ["const", "volatile", "static", "immutable"],
+        correctAnswer: "const",
+        explanation:
+          "The `const` keyword makes a variable’s value unchangeable once initialized.",
+      },
+      {
+        id: 4,
+        question: "Which symbol is used to denote a preprocessor directive?",
+        options: ["$", "#", "@", "&"],
+        correctAnswer: "#",
+        explanation:
+          "All preprocessor commands in C start with a ‘#’, such as #include or #define.",
+      },
+      {
+        id: 5,
+        question: "What is the size of an int in 32-bit architecture?",
+        options: ["2 bytes", "4 bytes", "8 bytes", "Depends on compiler"],
+        correctAnswer: "4 bytes",
+        explanation:
+          "On a 32-bit system, `int` typically takes 4 bytes of memory.",
+      },
+      {
+        id: 6,
+        question: "Which function is used to output text to the screen?",
+        options: ["input()", "printf()", "scanf()", "cin>>"],
+        correctAnswer: "printf()",
+        explanation: "`printf()` is used in C to print output to the console.",
+      },
+      {
+        id: 7,
+        question: "Which header file is required for printf() and scanf()?",
+        options: ["stdlib.h", "math.h", "stdio.h", "string.h"],
+        correctAnswer: "stdio.h",
+        explanation:
+          "The `stdio.h` header file contains declarations for standard input and output functions.",
+      },
+      {
+        id: 8,
+        question: "What is the index of the first element in an array?",
+        options: ["0", "1", "-1", "Depends on compiler"],
+        correctAnswer: "0",
+        explanation:
+          "In C, arrays are zero-indexed, meaning indexing starts at 0.",
+      },
+      {
+        id: 9,
+        question: "Which operator is used to access the value at an address?",
+        options: ["&", "*", "->", "."],
+        correctAnswer: "*",
+        explanation:
+          "The dereference operator `*` gives the value stored at a pointer’s address.",
+      },
+      {
+        id: 10,
+        question: "What will `printf('%d', 5 < 2);` output?",
+        options: ["5", "2", "1", "0"],
+        correctAnswer: "0",
+        explanation: "Since 5 < 2 is false, the result is 0 in C.",
+      },
+      {
+        id: 11,
+        question:
+          "Which loop executes at least once even if the condition is false?",
+        options: ["for", "while", "do-while", "None"],
+        correctAnswer: "do-while",
+        explanation:
+          "`do-while` loop executes the code block first and checks the condition later.",
+      },
+      {
+        id: 12,
+        question: "Which of the following is a valid pointer declaration?",
+        options: ["int p;", "int *p;", "int &p;", "ptr int p;"],
+        correctAnswer: "int *p;",
+        explanation:
+          "Pointers in C are declared using an asterisk (*) before the variable name.",
+      },
+      {
+        id: 13,
+        question: "Which operator is used to allocate memory dynamically?",
+        options: ["alloc", "new", "malloc", "create"],
+        correctAnswer: "malloc",
+        explanation:
+          "`malloc()` is used in C to allocate memory dynamically from the heap.",
+      },
+      {
+        id: 14,
+        question: "Which keyword is used to return a value from a function?",
+        options: ["exit", "return", "break", "goto"],
+        correctAnswer: "return",
+        explanation:
+          "The `return` statement sends a value back to the function caller.",
+      },
+      {
+        id: 15,
+        question: "What is the output of `printf('%c', 'A' + 1);`?",
+        options: ["A", "B", "C", "Error"],
+        correctAnswer: "B",
+        explanation: "'A' + 1 gives the next ASCII character, which is 'B'.",
+      },
+    ],
+  },
 
-  // ======================= JAVASCRIPT =======================
-  javascript: [
-    {
-      question: "Which keyword declares a variable in JavaScript?",
-      options: ["var", "define", "set", "new"],
-      answer: "var",
-    },
-    {
-      question: "What is the type of NaN?",
-      options: ["number", "string", "undefined", "object"],
-      answer: "number",
-    },
-    {
-      question: "Which operator is used for strict equality?",
-      options: ["===", "==", "=", "!="],
-      answer: "===",
-    },
-    {
-      question: "What is the output of '2' + 2?",
-      options: ["'22'", "4", "NaN", "undefined"],
-      answer: "'22'",
-    },
-    {
-      question: "How do you write an arrow function?",
-      options: ["()=>{}", "function=>{}", "(){}=>", "=>function()"],
-      answer: "()=>{}",
-    },
-    {
-      question: "Which method converts JSON string to object?",
-      options: ["JSON.parse()", "JSON.stringify()", "parseJSON()", "toJSON()"],
-      answer: "JSON.parse()",
-    },
-    {
-      question: "What is a closure?",
-      options: [
-        "Function with preserved scope",
-        "Class object",
-        "Loop",
-        "Promise",
-      ],
-      answer: "Function with preserved scope",
-    },
-    {
-      question: "What is 'this' keyword in JS?",
-      options: [
-        "Current context",
-        "Parent class",
-        "Global object always",
-        "Null",
-      ],
-      answer: "Current context",
-    },
-    {
-      question: "Which method adds an element to an array?",
-      options: ["push()", "pop()", "shift()", "slice()"],
-      answer: "push()",
-    },
-    {
-      question: "Which data type is immutable in JS?",
-      options: ["String", "Array", "Object", "Set"],
-      answer: "String",
-    },
-    {
-      question: "What is a promise used for?",
-      options: ["Async operations", "Error handling", "Loops", "Events"],
-      answer: "Async operations",
-    },
-    {
-      question: "What does 'typeof null' return?",
-      options: ["object", "null", "undefined", "string"],
-      answer: "object",
-    },
-    {
-      question: "Which function executes after a delay?",
-      options: ["setTimeout()", "delay()", "wait()", "pause()"],
-      answer: "setTimeout()",
-    },
-    {
-      question: "What is event bubbling?",
-      options: [
-        "Event propagating upward",
-        "Event stops at target",
-        "Event goes downward",
-        "Event cloning",
-      ],
-      answer: "Event propagating upward",
-    },
-    {
-      question: "What is the default value of uninitialized variable?",
-      options: ["undefined", "null", "0", "false"],
-      answer: "undefined",
-    },
-    {
-      question: "Which method removes the last array element?",
-      options: ["pop()", "push()", "splice()", "slice()"],
-      answer: "pop()",
-    },
-    {
-      question: "Which symbol is used for comments in JS?",
-      options: ["//", "#", "<!-- -->", "/* */"],
-      answer: "//",
-    },
-    {
-      question: "Which keyword stops loop execution?",
-      options: ["break", "stop", "exit", "return"],
-      answer: "break",
-    },
-    {
-      question: "Which statement handles errors?",
-      options: ["try...catch", "if...else", "switch", "for"],
-      answer: "try...catch",
-    },
-    {
-      question: "What is hoisting?",
-      options: [
-        "Moving declarations to top",
-        "Deleting variables",
-        "Asynchronous calls",
-        "Sorting arrays",
-      ],
-      answer: "Moving declarations to top",
-    },
-  ],
+  {
+    subjectName: "JavaScript",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+    questions: [
+      {
+        id: 1,
+        question: "What is the output of '2' + 2 in JavaScript?",
+        options: ["4", "'22'", "NaN", "undefined"],
+        correctAnswer: "'22'",
+        explanation:
+          "When a string and number are added, JavaScript performs string concatenation.",
+      },
+      {
+        id: 2,
+        question: "Which keyword declares a block-scoped variable?",
+        options: ["var", "let", "const", "define"],
+        correctAnswer: "let",
+        explanation:
+          "`let` creates a block-scoped variable, unlike `var` which is function-scoped.",
+      },
+      {
+        id: 3,
+        question: "What is the result of typeof null?",
+        options: ["object", "null", "undefined", "number"],
+        correctAnswer: "object",
+        explanation:
+          "This is a known bug in JavaScript; `typeof null` returns 'object'.",
+      },
+      {
+        id: 4,
+        question: "Which company developed JavaScript?",
+        options: ["Microsoft", "Netscape", "Sun Microsystems", "Oracle"],
+        correctAnswer: "Netscape",
+        explanation:
+          "JavaScript was developed by Brendan Eich at Netscape in 1995.",
+      },
+      {
+        id: 5,
+        question: "What does NaN stand for?",
+        options: [
+          "Not a Null",
+          "Not a Number",
+          "No assigned Number",
+          "Non available Number",
+        ],
+        correctAnswer: "Not a Number",
+        explanation:
+          "`NaN` means an operation failed to produce a valid number.",
+      },
+      {
+        id: 6,
+        question: "Which method converts JSON string to object?",
+        options: [
+          "JSON.parse()",
+          "JSON.stringify()",
+          "JSON.object()",
+          "parse.JSON()",
+        ],
+        correctAnswer: "JSON.parse()",
+        explanation: "`JSON.parse()` converts JSON text into an object.",
+      },
+      {
+        id: 7,
+        question: "What is 'this' keyword in JavaScript?",
+        options: [
+          "Refers to the current object",
+          "Refers to the parent function",
+          "Always refers to window",
+          "Undefined",
+        ],
+        correctAnswer: "Refers to the current object",
+        explanation: "`this` refers to the current execution context.",
+      },
+      {
+        id: 8,
+        question: "Which method removes the last element from an array?",
+        options: ["pop()", "push()", "shift()", "splice()"],
+        correctAnswer: "pop()",
+        explanation:
+          "`pop()` removes and returns the last element of an array.",
+      },
+      {
+        id: 9,
+        question: "How do you write an arrow function in JavaScript?",
+        options: ["() => {}", "function => {}", "() -> {}", "() -> return {}"],
+        correctAnswer: "() => {}",
+        explanation: "Arrow functions use the `=>` syntax.",
+      },
+      {
+        id: 10,
+        question: "Which operator checks both value and type?",
+        options: ["==", "===", "!=", "="],
+        correctAnswer: "===",
+        explanation: "`===` checks both value and data type for equality.",
+      },
+      {
+        id: 11,
+        question: "How do you define a constant in JavaScript?",
+        options: ["var", "let", "const", "constant"],
+        correctAnswer: "const",
+        explanation: "`const` creates a read-only reference to a value.",
+      },
+      {
+        id: 12,
+        question: "Which event executes when a user clicks an element?",
+        options: ["onmouseover", "onchange", "onclick", "onload"],
+        correctAnswer: "onclick",
+        explanation:
+          "The `onclick` event handler triggers when an element is clicked.",
+      },
+      {
+        id: 13,
+        question: "Which method adds an element to the end of an array?",
+        options: ["push()", "unshift()", "concat()", "insert()"],
+        correctAnswer: "push()",
+        explanation:
+          "`push()` adds one or more elements to the end of an array.",
+      },
+      {
+        id: 14,
+        question: "How do you create a JavaScript object?",
+        options: [
+          "var obj = ();",
+          "var obj = {};",
+          "var obj = [];",
+          "var obj = new Array();",
+        ],
+        correctAnswer: "var obj = {};",
+        explanation: "Objects are created using curly braces `{}`.",
+      },
+      {
+        id: 15,
+        question: "What is the default value of an uninitialized variable?",
+        options: ["null", "undefined", "0", "empty string"],
+        correctAnswer: "undefined",
+        explanation:
+          "Variables declared but not assigned are `undefined` by default.",
+      },
+    ],
+  },
 
-  // ======================= CSS =======================
-  css: [
-    {
-      question: "Which property sets text color?",
-      options: ["color", "font-color", "text-color", "background-color"],
-      answer: "color",
-    },
-    {
-      question: "What does CSS stand for?",
-      options: [
-        "Cascading Style Sheets",
-        "Creative Style Syntax",
-        "Computer Style System",
-        "Coded Sheet Style",
-      ],
-      answer: "Cascading Style Sheets",
-    },
-    {
-      question: "Which property controls font size?",
-      options: ["font-size", "text-size", "font-weight", "font-family"],
-      answer: "font-size",
-    },
-    {
-      question: "Which unit is relative to parent font size?",
-      options: ["em", "px", "%", "rem"],
-      answer: "em",
-    },
-    {
-      question: "Which property adds space inside elements?",
-      options: ["padding", "margin", "border", "gap"],
-      answer: "padding",
-    },
-    {
-      question: "Which selector selects an element by id?",
-      options: ["#", ".", "*", ":"],
-      answer: "#",
-    },
-    {
-      question: "Which property makes text bold?",
-      options: ["font-weight", "font-style", "text-style", "font-size"],
-      answer: "font-weight",
-    },
-    {
-      question: "How do you center a div horizontally?",
-      options: [
-        "margin: auto",
-        "text-align: center",
-        "align: center",
-        "float: center",
-      ],
-      answer: "margin: auto",
-    },
-    {
-      question: "Which property changes the background color?",
-      options: ["background-color", "color", "bg-color", "bg"],
-      answer: "background-color",
-    },
-    {
-      question: "Which property changes cursor on hover?",
-      options: ["cursor", "hover", "pointer", "select"],
-      answer: "cursor",
-    },
-    {
-      question: "Which display type is default for div?",
-      options: ["block", "inline", "inline-block", "flex"],
-      answer: "block",
-    },
-    {
-      question: "Which property changes text to uppercase?",
-      options: ["text-transform", "text-case", "font-transform", "uppercase"],
-      answer: "text-transform",
-    },
-    {
-      question: "Which pseudo-class styles on hover?",
-      options: [":hover", "::hover", ":focus", "::focus"],
-      answer: ":hover",
-    },
-    {
-      question: "Which CSS layout uses grid cells?",
-      options: ["grid", "flex", "block", "inline"],
-      answer: "grid",
-    },
-    {
-      question: "Which property adds shadow around box?",
-      options: ["box-shadow", "text-shadow", "border-shadow", "filter"],
-      answer: "box-shadow",
-    },
-    {
-      question: "Which rule imports fonts?",
-      options: ["@font-face", "@import-font", "@text", "@font"],
-      answer: "@font-face",
-    },
-    {
-      question: "What does z-index control?",
-      options: ["Stacking order", "Font size", "Opacity", "Layout"],
-      answer: "Stacking order",
-    },
-    {
-      question: "Which property adds animation?",
-      options: ["animation", "transition", "motion", "keyframes"],
-      answer: "animation",
-    },
-    {
-      question: "Which property sets transparency?",
-      options: ["opacity", "visibility", "filter", "display"],
-      answer: "opacity",
-    },
-    {
-      question: "Which property makes element sticky?",
-      options: [
-        "position: sticky",
-        "float: sticky",
-        "display: sticky",
-        "fixed: sticky",
-      ],
-      answer: "position: sticky",
-    },
-  ],
-
-  // ======================= NODEJS =======================
-  nodejs: [
-    {
-      question: "Node.js is built on which engine?",
-      options: ["V8", "SpiderMonkey", "Rhino", "Chakra"],
-      answer: "V8",
-    },
-    {
-      question: "Which module is used to create a server?",
-      options: ["http", "fs", "url", "path"],
-      answer: "http",
-    },
-    {
-      question: "Which method reads files?",
-      options: ["fs.readFile()", "fs.get()", "read()", "file.read()"],
-      answer: "fs.readFile()",
-    },
-    {
-      question: "Which function sends data to client?",
-      options: ["res.end()", "req.end()", "send()", "res.sendFile()"],
-      answer: "res.end()",
-    },
-    {
-      question: "Which statement imports a module?",
-      options: ["require()", "import()", "include()", "load()"],
-      answer: "require()",
-    },
-    {
-      question: "Which package manager comes with Node.js?",
-      options: ["npm", "yarn", "pnpm", "bower"],
-      answer: "npm",
-    },
-    {
-      question: "Which object represents current module?",
-      options: ["module", "process", "exports", "global"],
-      answer: "module",
-    },
-    {
-      question: "Which method creates child processes?",
-      options: [
-        "child_process.spawn()",
-        "fork()",
-        "exec()",
-        "process.create()",
-      ],
-      answer: "child_process.spawn()",
-    },
-    {
-      question: "Which command initializes npm project?",
-      options: ["npm init", "npm start", "npm install", "npm build"],
-      answer: "npm init",
-    },
-    {
-      question: "Which object handles events?",
-      options: ["EventEmitter", "Listener", "Handler", "Callback"],
-      answer: "EventEmitter",
-    },
-    {
-      question: "Which function logs output?",
-      options: ["console.log()", "print()", "log()", "echo()"],
-      answer: "console.log()",
-    },
-    {
-      question: "Which method closes a server?",
-      options: [
-        "server.close()",
-        "server.end()",
-        "server.stop()",
-        "app.exit()",
-      ],
-      answer: "server.close()",
-    },
-    {
-      question: "Which module handles file paths?",
-      options: ["path", "fs", "url", "os"],
-      answer: "path",
-    },
-    {
-      question: "What does process.env store?",
-      options: ["Environment variables", "Local files", "Modules", "Database"],
-      answer: "Environment variables",
-    },
-    {
-      question: "Which command installs packages globally?",
-      options: ["npm install -g", "npm global", "npm add", "npm push"],
-      answer: "npm install -g",
-    },
-    {
-      question: "What is package.json used for?",
-      options: [
-        "Project metadata",
-        "Only dependencies",
-        "User data",
-        "Server config",
-      ],
-      answer: "Project metadata",
-    },
-    {
-      question: "What does require('fs') return?",
-      options: [
-        "File System module",
-        "HTTP Server",
-        "OS module",
-        "Global object",
-      ],
-      answer: "File System module",
-    },
-    {
-      question: "Which module parses URL?",
-      options: ["url", "path", "query", "router"],
-      answer: "url",
-    },
-    {
-      question: "Which module provides OS info?",
-      options: ["os", "sys", "cpu", "device"],
-      answer: "os",
-    },
-    {
-      question: "Which function exits Node process?",
-      options: ["process.exit()", "exit()", "quit()", "stop()"],
-      answer: "process.exit()",
-    },
-  ],
-
-  mern: [
-    {
-      question: "What does MERN stand for?",
-      options: [
-        "MongoDB, Express, React, Node",
-        "MySQL, Ember, React, Nginx",
-        "MongoDB, Electron, Redux, Node",
-        "Mongo, Express, Ruby, Next",
-      ],
-      answer: "MongoDB, Express, React, Node",
-      explanation:
-        "MERN stands for MongoDB, Express.js, React, and Node.js — a full-stack JavaScript framework.",
-    },
-    {
-      question: "Which component handles the backend in MERN?",
-      options: ["React", "Express and Node", "MongoDB", "HTML"],
-      answer: "Express and Node",
-      explanation:
-        "In MERN, Express and Node handle backend logic and API requests.",
-    },
-    {
-      question: "Which database is used in MERN?",
-      options: ["MySQL", "SQLite", "MongoDB", "PostgreSQL"],
-      answer: "MongoDB",
-      explanation:
-        "MERN uses MongoDB, a NoSQL database for storing JSON-like documents.",
-    },
-    {
-      question: "Which command creates a new React app?",
-      options: [
-        "npx create-react-app myApp",
-        "npm init react-app",
-        "react new myApp",
-        "npm create react",
-      ],
-      answer: "npx create-react-app myApp",
-      explanation:
-        "Use 'npx create-react-app myApp' to create a new React application.",
-    },
-    {
-      question: "Which package connects Node.js with MongoDB?",
-      options: ["mongoose", "sequelize", "prisma", "knex"],
-      answer: "mongoose",
-      explanation:
-        "Mongoose is an ODM library used to interact with MongoDB in Node.js.",
-    },
-    {
-      question: "In MERN, where is JSX used?",
-      options: ["MongoDB", "Express", "React", "Node"],
-      answer: "React",
-      explanation:
-        "JSX is a React feature allowing HTML-like syntax inside JavaScript.",
-    },
-    {
-      question: "Which HTTP method is used to create data?",
-      options: ["GET", "POST", "PUT", "DELETE"],
-      answer: "POST",
-      explanation:
-        "The POST method is used to create new resources on the server.",
-    },
-    {
-      question: "Which tool is commonly used for API testing in MERN?",
-      options: ["Postman", "VS Code", "GitHub", "Mongo Shell"],
-      answer: "Postman",
-      explanation:
-        "Postman is used to test REST APIs by sending HTTP requests.",
-    },
-    {
-      question: "Which library is used to manage routing in React?",
-      options: ["React Router", "Redux", "RouterJS", "Express Router"],
-      answer: "React Router",
-      explanation:
-        "React Router enables dynamic routing in React applications.",
-    },
-    {
-      question: "Which command starts a Node.js server?",
-      options: [
-        "node app.js",
-        "npm start node",
-        "node run",
-        "start node server",
-      ],
-      answer: "node app.js",
-      explanation:
-        "You start a Node server using the 'node' command followed by your file name.",
-    },
-    {
-      question: "What is the role of Express.js?",
-      options: [
-        "Backend routing and API creation",
-        "Database management",
-        "Frontend rendering",
-        "CSS styling",
-      ],
-      answer: "Backend routing and API creation",
-      explanation:
-        "Express handles routes, requests, and responses in Node.js.",
-    },
-    {
-      question: "Which part of MERN stack runs in the browser?",
-      options: ["React", "Express", "Node", "MongoDB"],
-      answer: "React",
-      explanation: "React runs in the browser and handles UI rendering.",
-    },
-    {
-      question: "How is data sent from React to Node backend?",
-      options: ["Fetch or Axios", "Express", "Redux", "Mongoose"],
-      answer: "Fetch or Axios",
-      explanation:
-        "Axios or Fetch is used to send HTTP requests from React to backend APIs.",
-    },
-    {
-      question: "What type of database is MongoDB?",
-      options: ["Relational", "Document-based", "Graph", "Key-Value"],
-      answer: "Document-based",
-      explanation: "MongoDB is a NoSQL, document-oriented database.",
-    },
-    {
-      question: "What is used to handle asynchronous code in Node.js?",
-      options: ["Promises and async/await", "Threads", "Loops", "Classes"],
-      answer: "Promises and async/await",
-      explanation:
-        "Node uses Promises and async/await for asynchronous operations.",
-    },
-    {
-      question: "Which function sends data from backend to frontend?",
-      options: ["res.send()", "req.send()", "send.data()", "app.send()"],
-      answer: "res.send()",
-      explanation: "In Express, res.send() sends a response to the client.",
-    },
-    {
-      question: "Which port is commonly used for Node.js servers?",
-      options: ["3000", "80", "8080", "27017"],
-      answer: "3000",
-      explanation:
-        "Developers often run Node.js servers on port 3000 during development.",
-    },
-    {
-      question: "Which extension is used for React components?",
-      options: [".jsx", ".js", ".html", ".react"],
-      answer: ".jsx",
-      explanation:
-        "React components often use the .jsx extension to include JSX syntax.",
-    },
-    {
-      question: "Which middleware is used to parse JSON in Express?",
-      options: ["express.json()", "bodyParser()", "json.parse()", "req.json()"],
-      answer: "express.json()",
-      explanation:
-        "Express provides express.json() to parse JSON request bodies.",
-    },
-    {
-      question: "Which package manages frontend dependencies?",
-      options: ["npm or yarn", "pip", "apt-get", "composer"],
-      answer: "npm or yarn",
-      explanation: "In MERN, npm or yarn manages JavaScript dependencies.",
-    },
-  ],
-
-  git: [
-    {
-      question: "What is Git used for?",
-      options: [
-        "Version control",
-        "File compression",
-        "Hosting",
-        "Code compiling",
-      ],
-      answer: "Version control",
-      explanation: "Git tracks changes in source code during development.",
-    },
-    {
-      question: "Which command initializes a Git repository?",
-      options: ["git init", "git start", "git new", "git repo"],
-      answer: "git init",
-      explanation:
-        "Use 'git init' to create a new Git repository in a directory.",
-    },
-    {
-      question: "Which command stages changes for commit?",
-      options: ["git add", "git stage", "git commit", "git push"],
-      answer: "git add",
-      explanation: "'git add' moves changes to the staging area.",
-    },
-    {
-      question: "Which command commits staged changes?",
-      options: ["git commit", "git push", "git save", "git stage"],
-      answer: "git commit",
-      explanation: "'git commit' records staged changes in the repository.",
-    },
-    {
-      question: "Which command shows repository history?",
-      options: ["git history", "git log", "git show", "git reflog"],
-      answer: "git log",
-      explanation: "The 'git log' command displays commit history.",
-    },
-    {
-      question: "Which command clones a remote repo?",
-      options: ["git copy", "git clone", "git fetch", "git pull"],
-      answer: "git clone",
-      explanation: "Use 'git clone' to copy a remote repository locally.",
-    },
-    {
-      question: "Which file tells Git to ignore files?",
-      options: [".gitignore", ".gitconfig", "ignore.txt", "gitignore.js"],
-      answer: ".gitignore",
-      explanation:
-        "The '.gitignore' file specifies files Git should skip tracking.",
-    },
-    {
-      question: "Which command creates a new branch?",
-      options: [
-        "git branch newBranch",
-        "git checkout newBranch",
-        "git create branch",
-        "git new",
-      ],
-      answer: "git branch newBranch",
-      explanation: "'git branch <branch_name>' creates a new branch.",
-    },
-    {
-      question: "Which command switches branches?",
-      options: ["git switch", "git move", "git change", "git branch"],
-      answer: "git switch",
-      explanation:
-        "Use 'git switch' or 'git checkout' to move between branches.",
-    },
-    {
-      question: "Which command merges branches?",
-      options: ["git merge", "git add merge", "git sync", "git combine"],
-      answer: "git merge",
-      explanation: "'git merge' combines changes from one branch into another.",
-    },
-    {
-      question: "Which command uploads commits to remote?",
-      options: ["git upload", "git push", "git commit", "git add"],
-      answer: "git push",
-      explanation: "'git push' sends local commits to the remote repository.",
-    },
-    {
-      question: "Which command fetches latest changes?",
-      options: ["git pull", "git fetch", "git clone", "git sync"],
-      answer: "git pull",
-      explanation:
-        "'git pull' fetches and merges changes from remote into local.",
-    },
-    {
-      question: "Which command removes a file from Git?",
-      options: ["git rm", "git delete", "git remove", "git clear"],
-      answer: "git rm",
-      explanation:
-        "'git rm' deletes a file from both Git and working directory.",
-    },
-    {
-      question: "Which command shows file differences?",
-      options: ["git diff", "git status", "git compare", "git check"],
-      answer: "git diff",
-      explanation: "'git diff' shows differences between file versions.",
-    },
-    {
-      question: "Which command reverts a commit?",
-      options: ["git revert", "git undo", "git reset", "git back"],
-      answer: "git revert",
-      explanation:
-        "'git revert' creates a new commit that undoes the previous commit.",
-    },
-    {
-      question: "Which command configures user email?",
-      options: ["git config", "git setup", "git email", "git set"],
-      answer: "git config",
-      explanation:
-        "Use 'git config' to set username and email globally or locally.",
-    },
-    {
-      question: "Which command shows current branch?",
-      options: ["git branch", "git show", "git current", "git log"],
-      answer: "git branch",
-      explanation:
-        "'git branch' lists all branches and highlights the current one.",
-    },
-    {
-      question: "Which command unstages a file?",
-      options: [
-        "git restore --staged",
-        "git unstage",
-        "git remove",
-        "git cancel",
-      ],
-      answer: "git restore --staged",
-      explanation:
-        "This command removes a file from the staging area without deleting it.",
-    },
-    {
-      question: "Which command deletes a branch?",
-      options: [
-        "git branch -d",
-        "git delete branch",
-        "git remove branch",
-        "git clear",
-      ],
-      answer: "git branch -d",
-      explanation: "'git branch -d <branch>' deletes a branch safely.",
-    },
-    {
-      question: "Which platform hosts Git repositories online?",
-      options: ["GitHub", "Docker", "Heroku", "AWS"],
-      answer: "GitHub",
-      explanation:
-        "GitHub is a cloud-based platform for hosting and collaborating on Git repositories.",
-    },
-  ],
-
-  computerNetwork: [
-    {
-      question: "What does IP stand for?",
-      options: [
-        "Internet Protocol",
-        "Internal Process",
-        "Internet Program",
-        "Interface Point",
-      ],
-      answer: "Internet Protocol",
-      explanation:
-        "IP stands for Internet Protocol, responsible for addressing and routing data packets.",
-    },
-    {
-      question: "Which device connects multiple networks?",
-      options: ["Router", "Switch", "Hub", "Bridge"],
-      answer: "Router",
-      explanation:
-        "Routers connect multiple networks and forward data between them.",
-    },
-    {
-      question: "Which layer does IP belong to in the OSI model?",
-      options: ["Network", "Transport", "Data Link", "Application"],
-      answer: "Network",
-      explanation:
-        "The Internet Protocol (IP) operates at the Network layer of the OSI model.",
-    },
-    {
-      question: "Which protocol provides reliable communication?",
-      options: ["TCP", "UDP", "IP", "HTTP"],
-      answer: "TCP",
-      explanation:
-        "TCP ensures reliable communication using error-checking and acknowledgements.",
-    },
-    {
-      question: "Which protocol is connectionless?",
-      options: ["UDP", "TCP", "HTTP", "SMTP"],
-      answer: "UDP",
-      explanation:
-        "UDP is a connectionless protocol that doesn't guarantee delivery.",
-    },
-    {
-      question: "Which device operates at the Data Link layer?",
-      options: ["Switch", "Router", "Hub", "Gateway"],
-      answer: "Switch",
-      explanation:
-        "Switches operate at the Data Link layer, forwarding frames based on MAC addresses.",
-    },
-    {
-      question: "What does DNS do?",
-      options: [
-        "Converts domain names to IP addresses",
-        "Routes packets",
-        "Encrypts data",
-        "Manages bandwidth",
-      ],
-      answer: "Converts domain names to IP addresses",
-      explanation:
-        "DNS translates human-readable domain names into IP addresses.",
-    },
-    {
-      question: "Which protocol is used to send emails?",
-      options: ["SMTP", "FTP", "HTTP", "SNMP"],
-      answer: "SMTP",
-      explanation:
-        "SMTP (Simple Mail Transfer Protocol) sends outgoing emails.",
-    },
-    {
-      question: "Which port does HTTP use?",
-      options: ["80", "21", "25", "110"],
-      answer: "80",
-      explanation: "HTTP typically uses port 80 for web traffic.",
-    },
-    {
-      question: "Which port does HTTPS use?",
-      options: ["443", "8080", "23", "110"],
-      answer: "443",
-      explanation: "HTTPS uses port 443 for secure web communication.",
-    },
-    {
-      question: "Which protocol transfers files?",
-      options: ["FTP", "SMTP", "HTTP", "DNS"],
-      answer: "FTP",
-      explanation:
-        "FTP (File Transfer Protocol) is used to upload and download files.",
-    },
-    {
-      question: "Which layer ensures end-to-end communication?",
-      options: ["Transport", "Network", "Session", "Data Link"],
-      answer: "Transport",
-      explanation:
-        "The Transport layer manages reliable data transfer between devices.",
-    },
-    {
-      question: "Which device extends a network without routing?",
-      options: ["Switch", "Router", "Gateway", "Firewall"],
-      answer: "Switch",
-      explanation:
-        "Switches extend networks and connect devices within the same LAN.",
-    },
-    {
-      question: "What is the default subnet mask for Class C?",
-      options: ["255.255.255.0", "255.255.0.0", "255.0.0.0", "255.255.254.0"],
-      answer: "255.255.255.0",
-      explanation:
-        "Class C networks use 255.255.255.0 as the default subnet mask.",
-    },
-    {
-      question: "Which layer is responsible for encryption?",
-      options: ["Presentation", "Session", "Network", "Transport"],
-      answer: "Presentation",
-      explanation:
-        "The Presentation layer handles encryption and data formatting.",
-    },
-    {
-      question: "What is the main function of ARP?",
-      options: [
-        "Map IP to MAC address",
-        "Route packets",
-        "Assign IP",
-        "Encrypt data",
-      ],
-      answer: "Map IP to MAC address",
-      explanation:
-        "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses.",
-    },
-    {
-      question: "Which protocol retrieves emails from a server?",
-      options: ["POP3", "SMTP", "FTP", "DNS"],
-      answer: "POP3",
-      explanation: "POP3 retrieves emails from the mail server to the client.",
-    },
-    {
-      question: "What is bandwidth?",
-      options: [
-        "Data transfer capacity",
-        "Storage space",
-        "Signal strength",
-        "Frequency range",
-      ],
-      answer: "Data transfer capacity",
-      explanation:
-        "Bandwidth measures the amount of data that can be transmitted per second.",
-    },
-    {
-      question: "Which topology connects all nodes to a central hub?",
-      options: ["Star", "Ring", "Bus", "Mesh"],
-      answer: "Star",
-      explanation:
-        "In a star topology, each node connects to a central hub or switch.",
-    },
-    {
-      question: "Which protocol secures communication over the Internet?",
-      options: ["SSL/TLS", "HTTP", "TCP", "SMTP"],
-      answer: "SSL/TLS",
-      explanation:
-        "SSL/TLS provides encryption and authentication for secure communication.",
-    },
-  ],
-
-  operatingSystem: [
-    {
-      question: "What is the main function of an operating system?",
-      options: [
-        "To run hardware directly",
-        "To manage hardware and software resources",
-        "To compile source code",
-        "To connect to the internet",
-      ],
-      answer: "To manage hardware and software resources",
-      explanation:
-        "The OS manages CPU, memory, storage, and I/O devices, serving as a bridge between hardware and software.",
-    },
-    {
-      question: "Which of the following is not an operating system?",
-      options: ["Windows", "Linux", "MacOS", "Oracle"],
-      answer: "Oracle",
-      explanation:
-        "Oracle is a database management system, not an operating system.",
-    },
-    {
-      question: "Which of the following is a type of OS?",
-      options: ["Batch", "Real-time", "Distributed", "All of these"],
-      answer: "All of these",
-      explanation:
-        "Operating systems can be batch, real-time, or distributed depending on their scheduling and control methods.",
-    },
-    {
-      question: "Which component manages process scheduling?",
-      options: ["Kernel", "Shell", "BIOS", "Driver"],
-      answer: "Kernel",
-      explanation:
-        "The kernel is responsible for scheduling processes and managing CPU time allocation.",
-    },
-    {
-      question: "What is a system call?",
-      options: [
-        "An API to request OS services",
-        "A user program",
-        "A compiler function",
-        "A virus detection function",
-      ],
-      answer: "An API to request OS services",
-      explanation:
-        "A system call allows user-level programs to request services from the operating system kernel.",
-    },
-    {
-      question: "Which of these is a process state?",
-      options: ["New", "Running", "Waiting", "All of these"],
-      answer: "All of these",
-      explanation:
-        "A process can be in new, running, waiting, or terminated state during its lifecycle.",
-    },
-    {
-      question: "Which memory management technique uses pages?",
-      options: ["Segmentation", "Paging", "Swapping", "Compaction"],
-      answer: "Paging",
-      explanation:
-        "Paging divides memory into fixed-size pages to manage processes efficiently and avoid fragmentation.",
-    },
-    {
-      question: "What is a deadlock?",
-      options: [
-        "A state where processes wait indefinitely for resources",
-        "A type of memory leak",
-        "A compiler error",
-        "A disk scheduling algorithm",
-      ],
-      answer: "A state where processes wait indefinitely for resources",
-      explanation:
-        "Deadlock occurs when multiple processes hold resources and wait for others to release theirs.",
-    },
-    {
-      question: "Which scheduling algorithm is preemptive?",
-      options: ["FCFS", "SJF", "Round Robin", "None of these"],
-      answer: "Round Robin",
-      explanation:
-        "Round Robin is preemptive and allocates fixed time slices to processes in a cyclic order.",
-    },
-    {
-      question: "What is the purpose of virtual memory?",
-      options: [
-        "To increase physical RAM",
-        "To allow larger programs to run",
-        "To store files permanently",
-        "To back up data",
-      ],
-      answer: "To allow larger programs to run",
-      explanation:
-        "Virtual memory uses disk space to simulate RAM, enabling execution of programs larger than physical memory.",
-    },
-  ],
-
-  linux: [
-    {
-      question: "Which command lists files in Linux?",
-      options: ["list", "show", "ls", "dir"],
-      answer: "ls",
-      explanation:
-        "The `ls` command lists files and directories in the current directory.",
-    },
-    {
-      question: "Which command is used to change directories?",
-      options: ["cd", "mv", "dir", "path"],
-      answer: "cd",
-      explanation:
-        "The `cd` command allows you to navigate between directories.",
-    },
-    {
-      question: "Which user has full system privileges?",
-      options: ["Admin", "Root", "Sudo", "User"],
-      answer: "Root",
-      explanation:
-        "The `root` user has full access to all commands and files on the system.",
-    },
-    {
-      question: "What does the `chmod` command do?",
-      options: [
-        "Changes file ownership",
-        "Changes file permissions",
-        "Deletes files",
-        "Creates directories",
-      ],
-      answer: "Changes file permissions",
-      explanation:
-        "The `chmod` command modifies read, write, and execute permissions of files or directories.",
-    },
-    {
-      question: "Which command displays the current working directory?",
-      options: ["pwd", "ls", "dir", "whoami"],
-      answer: "pwd",
-      explanation:
-        "`pwd` stands for Print Working Directory and displays your current directory path.",
-    },
-    {
-      question: "What does `grep` do?",
-      options: [
-        "Searches text patterns in files",
-        "Deletes files",
-        "Lists users",
-        "Changes ownership",
-      ],
-      answer: "Searches text patterns in files",
-      explanation:
-        "The `grep` command searches for specific text patterns using regular expressions.",
-    },
-    {
-      question: "Which directory stores configuration files?",
-      options: ["/bin", "/etc", "/home", "/usr"],
-      answer: "/etc",
-      explanation: "The `/etc` directory contains system configuration files.",
-    },
-    {
-      question: "Which command shows running processes?",
-      options: ["ps", "run", "proc", "top"],
-      answer: "ps",
-      explanation:
-        "The `ps` command lists current running processes with process IDs.",
-    },
-    {
-      question: "Which key combination stops a running process?",
-      options: ["Ctrl + S", "Ctrl + D", "Ctrl + C", "Ctrl + Z"],
-      answer: "Ctrl + C",
-      explanation:
-        "`Ctrl + C` sends an interrupt signal to terminate a process running in the terminal.",
-    },
-    {
-      question: "Which file stores user information?",
-      options: ["/etc/passwd", "/etc/user", "/home/user", "/var/log/users"],
-      answer: "/etc/passwd",
-      explanation:
-        "`/etc/passwd` stores user account details such as username and UID.",
-    },
-  ],
-
-  mongodb: [
-    {
-      question: "MongoDB is a type of ___ database.",
-      options: ["SQL", "NoSQL", "Graph", "Relational"],
-      answer: "NoSQL",
-      explanation:
-        "MongoDB is a NoSQL database that stores data as documents instead of tables.",
-    },
-    {
-      question: "Which format does MongoDB use to store data?",
-      options: ["XML", "BSON", "JSON", "CSV"],
-      answer: "BSON",
-      explanation:
-        "MongoDB stores data in BSON (Binary JSON) format for efficiency and flexibility.",
-    },
-    {
-      question: "What is a collection in MongoDB?",
-      options: [
-        "A group of databases",
-        "A table of documents",
-        "A field name",
-        "A query command",
-      ],
-      answer: "A table of documents",
-      explanation:
-        "Collections in MongoDB are equivalent to tables in relational databases.",
-    },
-    {
-      question: "Which command inserts a document?",
-      options: ["insertOne()", "add()", "push()", "save()"],
-      answer: "insertOne()",
-      explanation:
-        "`insertOne()` adds a single document into a MongoDB collection.",
-    },
-    {
-      question: "Which command retrieves data?",
-      options: ["get()", "find()", "fetch()", "search()"],
-      answer: "find()",
-      explanation:
-        "`find()` retrieves documents that match the specified query.",
-    },
-    {
-      question: "What is `_id` in MongoDB?",
-      options: [
-        "A field storing the document’s unique identifier",
-        "A function name",
-        "A database index",
-        "A query filter",
-      ],
-      answer: "A field storing the document’s unique identifier",
-      explanation:
-        "Each document has a unique `_id` field that acts as a primary key.",
-    },
-    {
-      question: "Which command deletes all documents?",
-      options: ["removeAll()", "deleteMany()", "clearAll()", "drop()"],
-      answer: "deleteMany()",
-      explanation:
-        "`deleteMany()` removes all documents matching a filter (or all if no filter).",
-    },
-    {
-      question: "Which function updates documents?",
-      options: ["modify()", "updateOne()", "push()", "change()"],
-      answer: "updateOne()",
-      explanation:
-        "`updateOne()` modifies a single document that matches a given condition.",
-    },
-    {
-      question: "Which command removes a collection?",
-      options: ["drop()", "delete()", "remove()", "clear()"],
-      answer: "drop()",
-      explanation: "`drop()` deletes an entire collection from the database.",
-    },
-    {
-      question: "Which of the following is true about MongoDB?",
-      options: [
-        "It uses dynamic schemas",
-        "It stores data in tables",
-        "It requires predefined columns",
-        "It uses SQL queries",
-      ],
-      answer: "It uses dynamic schemas",
-      explanation:
-        "MongoDB allows documents to have different structures — it's schema-less.",
-    },
-  ],
-};
+  {
+    subjectName: "Tailwind CSS",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    questions: [
+      {
+        question: "What is Tailwind CSS?",
+        options: [
+          "Utility-first CSS framework",
+          "Component library",
+          "JavaScript library",
+          "CSS preprocessor",
+        ],
+        answer: "Utility-first CSS framework",
+        explanation:
+          "Tailwind CSS provides low-level utility classes to build custom designs quickly.",
+      },
+      {
+        question: "Which file is used to configure Tailwind?",
+        options: ["tailwind.config.js", "style.css", "config.json", "theme.js"],
+        answer: "tailwind.config.js",
+        explanation:
+          "The `tailwind.config.js` file is used to customize themes, colors, and plugins.",
+      },
+      {
+        question: "How do you install Tailwind in a project?",
+        options: [
+          "npm install tailwindcss",
+          "npm install bootstrap",
+          "yarn add css",
+          "npm install twcss",
+        ],
+        answer: "npm install tailwindcss",
+        explanation:
+          "Tailwind can be installed using `npm install tailwindcss` followed by initialization.",
+      },
+      {
+        question: "What command initializes Tailwind config file?",
+        options: [
+          "npx tailwindcss init",
+          "tailwind start",
+          "npm run tailwind",
+          "init tailwind",
+        ],
+        answer: "npx tailwindcss init",
+        explanation:
+          "Running `npx tailwindcss init` generates a config file for customization.",
+      },
+      {
+        question: "Which class makes text bold?",
+        options: ["font-bold", "text-bold", "bold", "fw-bold"],
+        answer: "font-bold",
+        explanation:
+          "The `font-bold` class makes the text bold in Tailwind CSS.",
+      },
+      {
+        question: "How to center text in Tailwind?",
+        options: [
+          "text-center",
+          "align-center",
+          "justify-center",
+          "center-text",
+        ],
+        answer: "text-center",
+        explanation:
+          "Use `text-center` to align text horizontally in the center.",
+      },
+      {
+        question: "Which class adds margin of 4 units?",
+        options: ["m-4", "margin-4", "p-4", "gap-4"],
+        answer: "m-4",
+        explanation: "`m-4` applies margin on all sides with spacing unit 4.",
+      },
+      {
+        question: "Which class applies background color blue-500?",
+        options: [
+          "bg-blue-500",
+          "background-blue",
+          "bg-500-blue",
+          "blue-bg-500",
+        ],
+        answer: "bg-blue-500",
+        explanation: "The `bg-blue-500` class sets a medium blue background.",
+      },
+      {
+        question: "How to apply padding of 2 units?",
+        options: ["p-2", "padding-2", "pd-2", "pg-2"],
+        answer: "p-2",
+        explanation: "The `p-2` class applies padding on all sides.",
+      },
+      {
+        question: "Which directive adds Tailwind’s base styles?",
+        options: [
+          "@tailwind base;",
+          "@tailwind core;",
+          "@import tailwind;",
+          "@base;",
+        ],
+        answer: "@tailwind base;",
+        explanation:
+          "The `@tailwind base;` directive injects Tailwind’s base styles into your CSS.",
+      },
+      {
+        question: "How to create a flex container?",
+        options: ["flex", "display-flex", "d-flex", "flexbox"],
+        answer: "flex",
+        explanation: "The `flex` class makes an element a flex container.",
+      },
+      {
+        question: "Which class changes text color?",
+        options: ["text-color", "text-blue-500", "color-blue", "font-color"],
+        answer: "text-blue-500",
+        explanation:
+          "Use classes like `text-blue-500` to change the text color.",
+      },
+      {
+        question: "Which class adds rounded corners?",
+        options: ["rounded", "corner", "border-radius", "curve"],
+        answer: "rounded",
+        explanation:
+          "The `rounded` class adds border radius to make corners round.",
+      },
+      {
+        question: "Which class adds shadow?",
+        options: [
+          "shadow",
+          "box-shadow",
+          "shadow-md",
+          "both shadow and shadow-md",
+        ],
+        answer: "both shadow and shadow-md",
+        explanation:
+          "You can use `shadow` for small and `shadow-md` for medium shadows.",
+      },
+      {
+        question: "What is the purpose of Tailwind’s JIT mode?",
+        options: [
+          "Generates styles on-demand",
+          "Loads all CSS",
+          "Minifies JS",
+          "Caches fonts",
+        ],
+        answer: "Generates styles on-demand",
+        explanation:
+          "Just-In-Time mode compiles only the classes you use, reducing CSS size and improving speed.",
+      },
+    ],
+  },
+  {
+    subjectName: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    questions: [
+      {
+        id: 1,
+        question: "What is Node.js built on?",
+        options: [
+          "V8 JavaScript Engine",
+          "Java Virtual Machine",
+          "Python",
+          "C#",
+        ],
+        correctAnswer: "V8 JavaScript Engine",
+        explanation: "Node.js runs on Chrome's V8 JavaScript engine.",
+      },
+      {
+        id: 2,
+        question: "Which module is used to create a web server in Node.js?",
+        options: ["http", "fs", "net", "url"],
+        correctAnswer: "http",
+        explanation: "The built-in 'http' module allows creating web servers.",
+      },
+      {
+        id: 3,
+        question: "What does npm stand for?",
+        options: [
+          "Node Package Manager",
+          "Node Program Manager",
+          "New Package Module",
+          "None",
+        ],
+        correctAnswer: "Node Package Manager",
+        explanation: "npm is the default package manager for Node.js.",
+      },
+      {
+        id: 4,
+        question:
+          "Which function is used to import modules in Node.js (CommonJS)?",
+        options: ["import", "require()", "include()", "fetch()"],
+        correctAnswer: "require()",
+        explanation: "CommonJS uses 'require()' to import modules.",
+      },
+      {
+        id: 5,
+        question: "Which module handles file operations?",
+        options: ["http", "fs", "os", "path"],
+        correctAnswer: "fs",
+        explanation:
+          "'fs' (File System) module provides functions to work with files.",
+      },
+      {
+        id: 6,
+        question: "Which method is used to read a file asynchronously?",
+        options: ["fs.read()", "fs.readFile()", "fs.open()", "fs.getFile()"],
+        correctAnswer: "fs.readFile()",
+        explanation: "'fs.readFile()' reads file data asynchronously.",
+      },
+      {
+        id: 7,
+        question: "What does 'process' object provide?",
+        options: [
+          "OS info",
+          "Environment info",
+          "Current process info",
+          "All of these",
+        ],
+        correctAnswer: "All of these",
+        explanation:
+          "'process' gives access to environment variables and runtime info.",
+      },
+      {
+        id: 8,
+        question: "How can you create a package.json file?",
+        options: ["npm init", "npm create", "node init", "package create"],
+        correctAnswer: "npm init",
+        explanation:
+          "'npm init' creates a new package.json file interactively.",
+      },
+      {
+        id: 9,
+        question: "Which of the following is NOT a core module?",
+        options: ["fs", "http", "events", "express"],
+        correctAnswer: "express",
+        explanation: "Express is a third-party module, not built into Node.js.",
+      },
+      {
+        id: 10,
+        question: "What does 'module.exports' do?",
+        options: [
+          "Exports a function or object to be used in another file",
+          "Imports a module",
+          "Starts the server",
+          "Clears cache",
+        ],
+        correctAnswer:
+          "Exports a function or object to be used in another file",
+        explanation: "'module.exports' allows sharing code between files.",
+      },
+      {
+        id: 11,
+        question: "Which event is emitted when a stream is finished?",
+        options: ["data", "end", "finish", "close"],
+        correctAnswer: "end",
+        explanation:
+          "The 'end' event signifies that no more data will be provided.",
+      },
+      {
+        id: 12,
+        question: "Which command installs a package globally?",
+        options: [
+          "npm install package",
+          "npm install -g package",
+          "npm global package",
+          "npm get package",
+        ],
+        correctAnswer: "npm install -g package",
+        explanation: "Use '-g' flag to install a package globally.",
+      },
+      {
+        id: 13,
+        question: "Which module helps to work with file paths?",
+        options: ["url", "os", "path", "net"],
+        correctAnswer: "path",
+        explanation: "'path' helps handle and transform file paths easily.",
+      },
+      {
+        id: 14,
+        question: "What does event-driven mean in Node.js?",
+        options: [
+          "Code executes sequentially",
+          "Code reacts to events asynchronously",
+          "All code runs in parallel",
+          "None of the above",
+        ],
+        correctAnswer: "Code reacts to events asynchronously",
+        explanation: "Node.js uses event-driven non-blocking architecture.",
+      },
+      {
+        id: 15,
+        question: "Which method is used to start an HTTP server?",
+        options: ["listen()", "run()", "start()", "serve()"],
+        correctAnswer: "listen()",
+        explanation: "'server.listen(port)' starts the HTTP server.",
+      },
+    ],
+  },
+  {
+    subjectName: "CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    questions: [
+      {
+        id: 1,
+        question: "What does CSS stand for?",
+        options: [
+          "Cascading Style Sheets",
+          "Colorful Style Syntax",
+          "Computer Style Sheet",
+          "Creative Style System",
+        ],
+        correctAnswer: "Cascading Style Sheets",
+        explanation:
+          "CSS stands for Cascading Style Sheets, used for styling HTML elements.",
+      },
+      {
+        id: 2,
+        question: "Which property controls text size?",
+        options: ["font-style", "text-size", "font-size", "text-style"],
+        correctAnswer: "font-size",
+        explanation: "'font-size' defines the size of the text.",
+      },
+      {
+        id: 3,
+        question: "Which CSS property changes text color?",
+        options: ["color", "text-color", "font-color", "background-color"],
+        correctAnswer: "color",
+        explanation: "The 'color' property sets the text color.",
+      },
+      {
+        id: 4,
+        question: "How do you make text bold in CSS?",
+        options: [
+          "text-weight: bold;",
+          "font-weight: bold;",
+          "bold: true;",
+          "style: bold;",
+        ],
+        correctAnswer: "font-weight: bold;",
+        explanation:
+          "'font-weight' controls how thick or bold the text appears.",
+      },
+      {
+        id: 5,
+        question: "Which property sets background color?",
+        options: ["background", "color", "background-color", "bg-color"],
+        correctAnswer: "background-color",
+        explanation:
+          "'background-color' sets the background color of an element.",
+      },
+      {
+        id: 6,
+        question: "Which value of position property is default?",
+        options: ["static", "relative", "fixed", "absolute"],
+        correctAnswer: "static",
+        explanation: "By default, all elements are positioned 'static'.",
+      },
+      {
+        id: 7,
+        question: "Which property is used for spacing inside an element?",
+        options: ["margin", "border", "padding", "space"],
+        correctAnswer: "padding",
+        explanation: "'padding' controls spacing inside an element's border.",
+      },
+      {
+        id: 8,
+        question: "Which property is used to create rounded corners?",
+        options: ["corner-radius", "border-radius", "round", "border-corner"],
+        correctAnswer: "border-radius",
+        explanation:
+          "'border-radius' defines how round the element’s corners are.",
+      },
+      {
+        id: 9,
+        question: "Which unit is relative to the parent element's font size?",
+        options: ["em", "px", "rem", "%"],
+        correctAnswer: "em",
+        explanation:
+          "'em' units are relative to the font size of the parent element.",
+      },
+      {
+        id: 10,
+        question: "Which property controls the space outside an element?",
+        options: ["padding", "margin", "spacing", "border"],
+        correctAnswer: "margin",
+        explanation: "'margin' adds space outside the element’s border.",
+      },
+      {
+        id: 11,
+        question: "Which property hides an element but keeps its space?",
+        options: [
+          "display: none;",
+          "visibility: hidden;",
+          "opacity: 0;",
+          "none of these",
+        ],
+        correctAnswer: "visibility: hidden;",
+        explanation:
+          "'visibility: hidden' hides the element but preserves its layout space.",
+      },
+      {
+        id: 12,
+        question: "How to make a flex container?",
+        options: [
+          "display: flex;",
+          "flex: true;",
+          "container: flex;",
+          "layout: flex;",
+        ],
+        correctAnswer: "display: flex;",
+        explanation:
+          "'display: flex;' enables Flexbox layout for child elements.",
+      },
+      {
+        id: 13,
+        question: "Which property changes the cursor when hovering?",
+        options: ["hover", "pointer", "cursor", "mouse"],
+        correctAnswer: "cursor",
+        explanation:
+          "'cursor' defines the mouse cursor type (e.g., pointer, move, text).",
+      },
+      {
+        id: 14,
+        question: "Which property controls text alignment?",
+        options: ["align", "text-align", "justify", "position"],
+        correctAnswer: "text-align",
+        explanation: "'text-align' sets horizontal alignment of text.",
+      },
+      {
+        id: 15,
+        question: "Which CSS function is used to apply gradients?",
+        options: [
+          "gradient()",
+          "linear-gradient()",
+          "color-gradient()",
+          "mix()",
+        ],
+        correctAnswer: "linear-gradient()",
+        explanation:
+          "'linear-gradient()' creates smooth transitions between two or more colors.",
+      },
+    ],
+  },
+  {
+    subjectName: "MongoDB",
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919836.png",
+    questions: [
+      {
+        question: "MongoDB is a type of?",
+        options: ["Relational DB", "NoSQL DB", "Graph DB", "Key-Value Store"],
+        answer: "NoSQL DB",
+        explanation:
+          "MongoDB is a NoSQL, document-oriented database that stores data in BSON format.",
+      },
+      {
+        question: "Which format does MongoDB store data in?",
+        options: ["JSON", "BSON", "XML", "YAML"],
+        answer: "BSON",
+        explanation:
+          "MongoDB uses BSON (Binary JSON) for efficient storage and faster access.",
+      },
+      {
+        question: "Which command is used to show all databases?",
+        options: ["show dbs", "show databases", "db.show()", "list dbs"],
+        answer: "show dbs",
+        explanation:
+          "In the Mongo shell, `show dbs` lists all available databases.",
+      },
+      {
+        question: "The default port for MongoDB is?",
+        options: ["27017", "8080", "3000", "5000"],
+        answer: "27017",
+        explanation: "MongoDB listens to port 27017 by default.",
+      },
+      {
+        question: "Which function inserts a document in MongoDB?",
+        options: ["db.insert()", "insertOne()", "insertDoc()", "add()"],
+        answer: "insertOne()",
+        explanation:
+          "The `insertOne()` method inserts a single document into a collection.",
+      },
+      {
+        question: "Which function is used to update documents?",
+        options: ["update()", "updateOne()", "editDoc()", "modify()"],
+        answer: "updateOne()",
+        explanation:
+          "The `updateOne()` function modifies the first document that matches the filter.",
+      },
+      {
+        question: "To remove a collection, you use?",
+        options: [
+          "db.drop()",
+          "db.collection.drop()",
+          "dropCollection()",
+          "deleteCollection()",
+        ],
+        answer: "db.collection.drop()",
+        explanation:
+          "You can delete a collection using `db.collection.drop()`.",
+      },
+      {
+        question: "What is a collection?",
+        options: ["Group of documents", "Single document", "Database", "Field"],
+        answer: "Group of documents",
+        explanation:
+          "A collection is a group of MongoDB documents similar to a table in SQL.",
+      },
+      {
+        question: "What is the primary key field in MongoDB?",
+        options: ["_id", "id", "primary", "key"],
+        answer: "_id",
+        explanation:
+          "Every MongoDB document has a unique `_id` field used as the primary key.",
+      },
+      {
+        question: "Which method is used to fetch data?",
+        options: ["find()", "search()", "get()", "fetch()"],
+        answer: "find()",
+        explanation:
+          "The `find()` method retrieves documents from a collection.",
+      },
+      {
+        question: "Aggregation in MongoDB is used for?",
+        options: [
+          "Summarizing data",
+          "Sorting only",
+          "Deleting data",
+          "Importing data",
+        ],
+        answer: "Summarizing data",
+        explanation:
+          "Aggregation is used to process data and return computed results like sums or averages.",
+      },
+      {
+        question: "Which operator is used for pattern matching?",
+        options: ["$regex", "$like", "$match", "$pattern"],
+        answer: "$regex",
+        explanation:
+          "MongoDB uses `$regex` for regular expression-based pattern matching.",
+      },
+      {
+        question: "Which command switches to a database?",
+        options: [
+          "use dbname",
+          "switch dbname",
+          "select dbname",
+          "open dbname",
+        ],
+        answer: "use dbname",
+        explanation:
+          "The `use` command switches the current context to another database.",
+      },
+      {
+        question: "What does BSON stand for?",
+        options: [
+          "Binary JSON",
+          "Basic JSON",
+          "Binary Script Object Notation",
+          "Big JSON",
+        ],
+        answer: "Binary JSON",
+        explanation:
+          "BSON means Binary JSON — it’s an efficient binary encoding of JSON-like documents.",
+      },
+      {
+        question: "Which company developed MongoDB?",
+        options: ["Google", "Facebook", "MongoDB Inc.", "Oracle"],
+        answer: "MongoDB Inc.",
+        explanation:
+          "MongoDB Inc. (formerly 10gen) developed and maintains MongoDB.",
+      },
+    ],
+  },
+  {
+    subjectName: "Git",
+    icon: "https://cdn-icons-png.flaticon.com/128/15466/15466163.png",
+    questions: [
+      {
+        question: "Git is a?",
+        options: [
+          "Version Control System",
+          "Programming Language",
+          "Database",
+          "Framework",
+        ],
+        answer: "Version Control System",
+        explanation:
+          "Git is a distributed version control system used for tracking changes in source code.",
+      },
+      {
+        question: "Who created Git?",
+        options: [
+          "Linus Torvalds",
+          "Bill Gates",
+          "Mark Zuckerberg",
+          "Dennis Ritchie",
+        ],
+        answer: "Linus Torvalds",
+        explanation:
+          "Git was created by Linus Torvalds in 2005, the creator of Linux.",
+      },
+      {
+        question: "Which command initializes a new Git repository?",
+        options: ["git init", "git start", "git new", "git repo"],
+        answer: "git init",
+        explanation:
+          "`git init` initializes a new Git repository in your project directory.",
+      },
+      {
+        question: "Which command stages changes?",
+        options: ["git add", "git stage", "git commit", "git push"],
+        answer: "git add",
+        explanation: "`git add` stages files for the next commit.",
+      },
+      {
+        question: "Which command commits staged changes?",
+        options: ["git commit", "git save", "git push", "git store"],
+        answer: "git commit",
+        explanation:
+          "`git commit` records staged changes to the repository history.",
+      },
+      {
+        question: "Which command displays commit history?",
+        options: ["git log", "git history", "git list", "git commits"],
+        answer: "git log",
+        explanation:
+          "`git log` displays the commit history in reverse chronological order.",
+      },
+      {
+        question: "Which command creates a new branch?",
+        options: [
+          "git branch",
+          "git new-branch",
+          "git create",
+          "git make-branch",
+        ],
+        answer: "git branch",
+        explanation: "`git branch` is used to create and list branches.",
+      },
+      {
+        question: "Which command switches branches?",
+        options: ["git checkout", "git switch", "git change", "git move"],
+        answer: "git checkout",
+        explanation: "`git checkout` switches to another branch or commit.",
+      },
+      {
+        question: "Which command merges two branches?",
+        options: ["git merge", "git join", "git combine", "git pull"],
+        answer: "git merge",
+        explanation:
+          "`git merge` integrates changes from another branch into the current one.",
+      },
+      {
+        question: "Which command uploads changes to a remote repo?",
+        options: ["git push", "git upload", "git send", "git merge"],
+        answer: "git push",
+        explanation:
+          "`git push` uploads local commits to the remote repository.",
+      },
+      {
+        question: "Which command downloads updates from remote?",
+        options: ["git pull", "git fetch", "git update", "git clone"],
+        answer: "git pull",
+        explanation:
+          "`git pull` fetches and merges changes from the remote repository.",
+      },
+      {
+        question: "Which command clones a repository?",
+        options: ["git clone", "git copy", "git download", "git import"],
+        answer: "git clone",
+        explanation:
+          "`git clone` copies an entire repository to your local system.",
+      },
+      {
+        question: "Which file tells Git what to ignore?",
+        options: [".gitignore", ".gitconfig", "ignore.txt", "exclude.txt"],
+        answer: ".gitignore",
+        explanation:
+          "`.gitignore` lists files and directories that Git should not track.",
+      },
+      {
+        question: "Which command checks repo status?",
+        options: ["git status", "git check", "git info", "git log"],
+        answer: "git status",
+        explanation:
+          "`git status` shows changes, staged files, and untracked files.",
+      },
+      {
+        question: "Which command removes a branch?",
+        options: ["git branch -d", "git delete", "git remove", "git discard"],
+        answer: "git branch -d",
+        explanation: "`git branch -d <branch>` deletes a branch safely.",
+      },
+    ],
+  },
+  {
+    subjectName: "DBMS",
+    icon: "https://cdn-icons-png.flaticon.com/128/13651/13651001.png",
+    questions: [
+      {
+        question: "DBMS stands for?",
+        options: [
+          "Database Management System",
+          "Data Business Management System",
+          "Database Manipulation Service",
+          "Data Backup Management System",
+        ],
+        answer: "Database Management System",
+        explanation: "DBMS is software that manages data in a structured form.",
+      },
+      {
+        question: "Which of the following is not a DBMS?",
+        options: ["Oracle", "MySQL", "Linux", "PostgreSQL"],
+        answer: "Linux",
+        explanation: "Linux is an operating system, not a database system.",
+      },
+      {
+        question: "Primary key must be?",
+        options: [
+          "Unique & Not Null",
+          "Nullable",
+          "Duplicated",
+          "Indexed only",
+        ],
+        answer: "Unique & Not Null",
+        explanation:
+          "A primary key uniquely identifies records and cannot contain NULLs.",
+      },
+      {
+        question: "Which command removes all rows from a table?",
+        options: ["TRUNCATE", "DELETE", "DROP", "REMOVE"],
+        answer: "TRUNCATE",
+        explanation: "`TRUNCATE` clears data but keeps the table structure.",
+      },
+      {
+        question: "Which normal form removes partial dependency?",
+        options: ["2NF", "1NF", "3NF", "BCNF"],
+        answer: "2NF",
+        explanation: "2NF eliminates partial dependency in composite keys.",
+      },
+      {
+        question: "Which language is used to query data?",
+        options: ["DML", "DDL", "TCL", "DCL"],
+        answer: "DML",
+        explanation:
+          "DML (Data Manipulation Language) includes commands like SELECT, INSERT, UPDATE.",
+      },
+      {
+        question: "What is a foreign key?",
+        options: [
+          "Key linking two tables",
+          "Primary key",
+          "Unique key",
+          "Temporary key",
+        ],
+        answer: "Key linking two tables",
+        explanation: "Foreign keys establish relationships between two tables.",
+      },
+      {
+        question: "Which operation combines rows from two tables?",
+        options: ["JOIN", "UNION", "INTERSECT", "MERGE"],
+        answer: "JOIN",
+        explanation: "`JOIN` combines rows based on related columns.",
+      },
+      {
+        question: "Which level defines data structure?",
+        options: ["Schema level", "Physical level", "View level", "User level"],
+        answer: "Schema level",
+        explanation:
+          "The schema level defines logical structure and relationships.",
+      },
+      {
+        question: "Which type of key can have NULL values?",
+        options: ["Foreign key", "Primary key", "Super key", "Candidate key"],
+        answer: "Foreign key",
+        explanation: "Foreign keys can contain NULL if no relationship exists.",
+      },
+      {
+        question: "Normalization is used to?",
+        options: [
+          "Reduce redundancy",
+          "Speed up data entry",
+          "Secure data",
+          "Add redundancy",
+        ],
+        answer: "Reduce redundancy",
+        explanation:
+          "Normalization organizes data to minimize redundancy and improve integrity.",
+      },
+      {
+        question: "Which command defines a new table?",
+        options: ["CREATE TABLE", "ADD TABLE", "INSERT TABLE", "DEFINE TABLE"],
+        answer: "CREATE TABLE",
+        explanation: "`CREATE TABLE` defines a new table in the database.",
+      },
+      {
+        question: "Which key uniquely identifies tuples?",
+        options: [
+          "Primary key",
+          "Foreign key",
+          "Composite key",
+          "Alternate key",
+        ],
+        answer: "Primary key",
+        explanation: "Primary keys uniquely identify each tuple in a table.",
+      },
+      {
+        question: "Which constraint ensures valid data entry?",
+        options: ["CHECK", "DEFAULT", "INDEX", "VIEW"],
+        answer: "CHECK",
+        explanation:
+          "CHECK ensures that a column’s value meets specified conditions.",
+      },
+      {
+        question: "Which normal form eliminates transitive dependency?",
+        options: ["3NF", "2NF", "1NF", "4NF"],
+        answer: "3NF",
+        explanation:
+          "3NF ensures that non-key attributes depend only on primary keys.",
+      },
+    ],
+  },
+  {
+    subjectName: "React",
+    icon: "https://cdn-icons-png.flaticon.com/128/1126/1126012.png",
+    questions: [
+      {
+        question: "What is React?",
+        options: [
+          "A JavaScript library for building user interfaces",
+          "A JavaScript framework for backend development",
+          "A CSS framework",
+          "A database system",
+        ],
+        answer: "A JavaScript library for building user interfaces",
+        explanation:
+          "React is a front-end library developed by Facebook for building UI components efficiently.",
+      },
+      {
+        question: "What is the virtual DOM in React?",
+        options: [
+          "A lightweight copy of the real DOM",
+          "A direct representation of HTML elements",
+          "A database structure",
+          "A CSS rendering engine",
+        ],
+        answer: "A lightweight copy of the real DOM",
+        explanation:
+          "Virtual DOM is an in-memory representation of the real DOM that allows faster updates.",
+      },
+      {
+        question: "Which method is used to update state in React?",
+        options: ["setState()", "updateState()", "changeState()", "modify()"],
+        answer: "setState()",
+        explanation:
+          "`setState()` is used in class components to update component state and trigger re-render.",
+      },
+      {
+        question: "What is JSX?",
+        options: [
+          "A syntax extension that allows HTML in JavaScript",
+          "A templating engine",
+          "A new JavaScript version",
+          "A CSS preprocessor",
+        ],
+        answer: "A syntax extension that allows HTML in JavaScript",
+        explanation:
+          "JSX lets developers write HTML-like syntax inside JavaScript, making UI creation easier.",
+      },
+      {
+        question: "React is primarily used for?",
+        options: [
+          "Building user interfaces",
+          "Handling databases",
+          "Server-side rendering only",
+          "Network management",
+        ],
+        answer: "Building user interfaces",
+        explanation:
+          "React focuses on creating reusable UI components for web and mobile applications.",
+      },
+      {
+        question:
+          "Which hook is used for managing state in functional components?",
+        options: ["useState", "useEffect", "useContext", "useRef"],
+        answer: "useState",
+        explanation:
+          "`useState` allows you to add and manage state variables in functional components.",
+      },
+      {
+        question: "What is the purpose of useEffect hook?",
+        options: [
+          "To handle side effects like API calls or subscriptions",
+          "To manage state",
+          "To render components conditionally",
+          "To create context",
+        ],
+        answer: "To handle side effects like API calls or subscriptions",
+        explanation:
+          "`useEffect` runs after render and is used for side effects such as fetching data or updating DOM.",
+      },
+      {
+        question: "Keys in React are used for?",
+        options: [
+          "Identifying unique elements in a list",
+          "Styling elements",
+          "Improving performance directly",
+          "Managing state",
+        ],
+        answer: "Identifying unique elements in a list",
+        explanation:
+          "Keys help React identify which items have changed, been added, or removed in lists.",
+      },
+      {
+        question: "Which command is used to create a new React app?",
+        options: [
+          "npx create-react-app appname",
+          "npm create react-app",
+          "npm init react",
+          "node create react-app",
+        ],
+        answer: "npx create-react-app appname",
+        explanation:
+          "The `npx create-react-app appname` command sets up a new React project with all configurations.",
+      },
+      {
+        question: "Which company developed React?",
+        options: ["Facebook", "Google", "Microsoft", "Twitter"],
+        answer: "Facebook",
+        explanation:
+          "React was developed by Facebook in 2013 to simplify building dynamic UIs.",
+      },
+      {
+        question: "What are components in React?",
+        options: [
+          "Reusable building blocks of UI",
+          "Functions that handle routing",
+          "Database connections",
+          "Server-side scripts",
+        ],
+        answer: "Reusable building blocks of UI",
+        explanation:
+          "Components are independent and reusable pieces of code that define how a part of the UI should appear.",
+      },
+      {
+        question: "Props in React are used to?",
+        options: [
+          "Pass data from parent to child components",
+          "Change the component’s state",
+          "Manage routing",
+          "Connect to APIs",
+        ],
+        answer: "Pass data from parent to child components",
+        explanation:
+          "Props are used for data transfer between components in a one-way (top-down) flow.",
+      },
+      {
+        question: "Which hook is used to access context data?",
+        options: ["useContext", "useState", "useEffect", "useReducer"],
+        answer: "useContext",
+        explanation:
+          "`useContext` allows functional components to consume context values directly.",
+      },
+      {
+        question: "What does ReactDOM.render() do?",
+        options: [
+          "Renders React elements into the DOM",
+          "Compiles JSX code",
+          "Runs React server",
+          "Updates component state",
+        ],
+        answer: "Renders React elements into the DOM",
+        explanation:
+          "`ReactDOM.render()` takes React elements and mounts them into the specified DOM container.",
+      },
+      {
+        question: "What is the default port for React development server?",
+        options: ["3000", "8080", "5000", "4000"],
+        answer: "3000",
+        explanation:
+          "React’s development server runs on port 3000 by default when started with `npm start`.",
+      },
+    ],
+  },
+  {
+    subjectName: "Computer Network",
+    icon: "https://cdn-icons-png.flaticon.com/128/3598/3598209.png",
+    questions: [
+      {
+        question: "What is the full form of LAN?",
+        options: [
+          "Local Access Network",
+          "Local Area Network",
+          "Logical Area Network",
+          "Long Area Network",
+        ],
+        answer: "Local Area Network",
+        explanation:
+          "LAN connects computers within a limited area like an office or school.",
+      },
+      {
+        question: "Which device connects multiple networks?",
+        options: ["Router", "Switch", "Hub", "Repeater"],
+        answer: "Router",
+        explanation:
+          "Routers connect and manage communication between multiple networks.",
+      },
+      {
+        question: "What does IP stand for?",
+        options: [
+          "Internet Protocol",
+          "Internal Program",
+          "Internet Path",
+          "Interface Protocol",
+        ],
+        answer: "Internet Protocol",
+        explanation:
+          "IP defines how data packets are addressed and routed across networks.",
+      },
+      {
+        question: "Which layer in OSI handles routing?",
+        options: ["Network", "Transport", "Data Link", "Session"],
+        answer: "Network",
+        explanation:
+          "The Network layer is responsible for routing and logical addressing.",
+      },
+      {
+        question: "Which protocol is used to send emails?",
+        options: ["SMTP", "FTP", "HTTP", "SNMP"],
+        answer: "SMTP",
+        explanation:
+          "SMTP (Simple Mail Transfer Protocol) is used for sending emails.",
+      },
+      {
+        question: "Which device operates at the Data Link layer?",
+        options: ["Switch", "Router", "Bridge", "Hub"],
+        answer: "Switch",
+        explanation:
+          "Switches operate at Layer 2 and forward frames based on MAC addresses.",
+      },
+      {
+        question: "What is the port number for HTTP?",
+        options: ["80", "21", "25", "110"],
+        answer: "80",
+        explanation: "HTTP uses port 80 by default for web communication.",
+      },
+      {
+        question: "Which layer ensures reliable transmission?",
+        options: ["Transport", "Network", "Session", "Physical"],
+        answer: "Transport",
+        explanation:
+          "The Transport layer ensures reliable delivery through TCP.",
+      },
+      {
+        question: "Full form of IP?",
+        options: [
+          "Internet Protocol",
+          "Internal Process",
+          "Interconnected Protocol",
+          "Interface Point",
+        ],
+        answer: "Internet Protocol",
+        explanation: "IP defines rules for addressing and routing packets.",
+      },
+      {
+        question: "What is the range of Class C IP addresses?",
+        options: [
+          "192.0.0.0 - 223.255.255.255",
+          "128.0.0.0 - 191.255.255.255",
+          "1.0.0.0 - 126.255.255.255",
+          "224.0.0.0 - 239.255.255.255",
+        ],
+        answer: "192.0.0.0 - 223.255.255.255",
+        explanation:
+          "Class C IPs are used for small networks and have 24-bit network IDs.",
+      },
+      {
+        question: "Which protocol is connection-oriented?",
+        options: ["TCP", "UDP", "IP", "HTTP"],
+        answer: "TCP",
+        explanation: "TCP establishes a connection before transmitting data.",
+      },
+      {
+        question: "What is DNS used for?",
+        options: [
+          "Resolve domain names to IP",
+          "Encrypt data",
+          "Cache websites",
+          "Store cookies",
+        ],
+        answer: "Resolve domain names to IP",
+        explanation:
+          "DNS translates human-readable domain names into IP addresses.",
+      },
+      {
+        question: "Which device regenerates signals?",
+        options: ["Repeater", "Router", "Bridge", "Switch"],
+        answer: "Repeater",
+        explanation:
+          "Repeaters amplify and retransmit weak signals in a network.",
+      },
+      {
+        question: "Which topology connects all nodes to a central hub?",
+        options: ["Star", "Bus", "Ring", "Mesh"],
+        answer: "Star",
+        explanation:
+          "In star topology, each node connects to a central device like a hub.",
+      },
+      {
+        question: "Which layer adds headers and trailers?",
+        options: ["Data Link", "Network", "Application", "Session"],
+        answer: "Data Link",
+        explanation:
+          "The Data Link layer frames packets with headers and trailers for transmission.",
+      },
+      {
+        question: "Which protocol transfers files?",
+        options: ["FTP", "SMTP", "HTTP", "SNMP"],
+        answer: "FTP",
+        explanation:
+          "FTP (File Transfer Protocol) is used for transferring files over a network.",
+      },
+    ],
+  },
+  {
+    subjectName: "Operating System",
+    icon: "https://cdn-icons-png.flaticon.com/128/882/882702.png",
+    questions: [
+      {
+        question: "An operating system acts as?",
+        options: ["User interface", "Hardware", "Resource manager", "Compiler"],
+        answer: "Resource manager",
+        explanation:
+          "The OS manages system resources like CPU, memory, and devices efficiently.",
+      },
+      {
+        question: "Which of the following is not a function of OS?",
+        options: [
+          "Memory management",
+          "Compiler design",
+          "File management",
+          "Process scheduling",
+        ],
+        answer: "Compiler design",
+        explanation:
+          "Compiler design is part of programming language implementation, not the OS.",
+      },
+      {
+        question: "What is a process?",
+        options: ["Program in execution", "Stored program", "Job", "Thread"],
+        answer: "Program in execution",
+        explanation:
+          "A process is an instance of a program currently being executed.",
+      },
+      {
+        question: "Which of these is not a type of OS?",
+        options: ["Batch", "Time-sharing", "Real-time", "Microcode OS"],
+        answer: "Microcode OS",
+        explanation: "Microcode is part of CPU design, not an OS type.",
+      },
+      {
+        question: "Context switching is related to?",
+        options: [
+          "Process scheduling",
+          "Memory allocation",
+          "File handling",
+          "Device management",
+        ],
+        answer: "Process scheduling",
+        explanation:
+          "Context switching saves and restores process states during CPU scheduling.",
+      },
+      {
+        question: "The part of OS that interacts with hardware is?",
+        options: ["Kernel", "Shell", "Application", "Command interpreter"],
+        answer: "Kernel",
+        explanation:
+          "The kernel is the core component that directly interacts with hardware.",
+      },
+      {
+        question: "Virtual memory is used to?",
+        options: [
+          "Increase physical memory",
+          "Provide larger memory space",
+          "Speed up CPU",
+          "Manage cache",
+        ],
+        answer: "Provide larger memory space",
+        explanation: "Virtual memory extends physical memory using disk space.",
+      },
+      {
+        question:
+          "Which scheduling algorithm gives equal time to each process?",
+        options: ["Round Robin", "FCFS", "SJF", "Priority"],
+        answer: "Round Robin",
+        explanation:
+          "Round Robin scheduling gives each process a fixed time slice in cyclic order.",
+      },
+      {
+        question: "Deadlock occurs when?",
+        options: [
+          "Processes wait for each other",
+          "Memory is full",
+          "Disk crashes",
+          "Cache misses",
+        ],
+        answer: "Processes wait for each other",
+        explanation:
+          "A deadlock happens when processes hold resources and wait indefinitely for others.",
+      },
+      {
+        question: "What is a semaphore used for?",
+        options: [
+          "Synchronization",
+          "Memory allocation",
+          "CPU scheduling",
+          "I/O handling",
+        ],
+        answer: "Synchronization",
+        explanation:
+          "Semaphores are used to synchronize processes and prevent race conditions.",
+      },
+      {
+        question: "Which OS is open-source?",
+        options: ["Windows", "Linux", "MacOS", "MS-DOS"],
+        answer: "Linux",
+        explanation: "Linux is an open-source operating system kernel.",
+      },
+      {
+        question: "What is thrashing?",
+        options: [
+          "High paging activity",
+          "Memory overflow",
+          "CPU failure",
+          "File corruption",
+        ],
+        answer: "High paging activity",
+        explanation:
+          "Thrashing occurs when excessive paging slows system performance.",
+      },
+      {
+        question: "What is a thread?",
+        options: ["Lightweight process", "Program", "File", "Command"],
+        answer: "Lightweight process",
+        explanation:
+          "A thread is the smallest unit of CPU scheduling and execution.",
+      },
+      {
+        question: "Which memory is non-volatile?",
+        options: ["RAM", "Cache", "ROM", "Registers"],
+        answer: "ROM",
+        explanation: "ROM retains its data even when power is turned off.",
+      },
+      {
+        question: "Spooling stands for?",
+        options: [
+          "Simultaneous Peripheral Operation Online",
+          "Simple Process Output Operation",
+          "Sequential Process Online",
+          "System Peripheral Output Layer",
+        ],
+        answer: "Simultaneous Peripheral Operation Online",
+        explanation:
+          "Spooling allows processes to queue I/O operations for devices like printers.",
+      },
+    ],
+  },
+];
