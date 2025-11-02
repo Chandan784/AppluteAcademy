@@ -840,6 +840,141 @@ export const quizData = [
     ],
   },
   {
+    subjectName: "Java",
+    icon: "https://cdn-icons-png.flaticon.com/128/226/226777.png",
+    questions: [
+      {
+        question: "What is Java?",
+        options: [
+          "A high-level, object-oriented programming language",
+          "A database management system",
+          "A web browser",
+          "An operating system",
+        ],
+        answer: "A high-level, object-oriented programming language",
+        explanation:
+          "Java is a general-purpose, object-oriented programming language used for building platform-independent applications.",
+      },
+      {
+        question: "Who developed Java?",
+        options: [
+          "James Gosling",
+          "Dennis Ritchie",
+          "Bjarne Stroustrup",
+          "Guido van Rossum",
+        ],
+        answer: "James Gosling",
+        explanation:
+          "Java was developed by James Gosling at Sun Microsystems in 1995.",
+      },
+      {
+        question: "Which of the following is not a Java feature?",
+        options: [
+          "Platform dependent",
+          "Object-oriented",
+          "Secure",
+          "Portable",
+        ],
+        answer: "Platform dependent",
+        explanation:
+          "Java is platform-independent because of the JVM (Java Virtual Machine).",
+      },
+      {
+        question: "Which keyword is used to inherit a class in Java?",
+        options: ["extends", "implements", "inherits", "instanceof"],
+        answer: "extends",
+        explanation:
+          "The `extends` keyword is used by a subclass to inherit properties from a superclass.",
+      },
+      {
+        question: "Which of these is used to define a constant in Java?",
+        options: ["final", "const", "static", "define"],
+        answer: "final",
+        explanation:
+          "The `final` keyword is used to declare constants, preventing modification after initialization.",
+      },
+      {
+        question: "What is JVM in Java?",
+        options: [
+          "Java Virtual Machine",
+          "Java Variable Manager",
+          "Java Vendor Machine",
+          "Java Version Module",
+        ],
+        answer: "Java Virtual Machine",
+        explanation:
+          "JVM executes Java bytecode and makes Java platform-independent.",
+      },
+      {
+        question: "Which method is the entry point of a Java program?",
+        options: ["main()", "start()", "run()", "execute()"],
+        answer: "main()",
+        explanation:
+          "The `main()` method is the entry point for every standalone Java application.",
+      },
+      {
+        question: "Which data type is used to store decimal values in Java?",
+        options: ["float", "int", "char", "boolean"],
+        answer: "float",
+        explanation:
+          "The `float` data type is used to store fractional numeric values.",
+      },
+      {
+        question: "Which of these is not a primitive data type in Java?",
+        options: ["String", "int", "char", "boolean"],
+        answer: "String",
+        explanation: "String is a class in Java, not a primitive data type.",
+      },
+      {
+        question: "Which operator is used for comparison in Java?",
+        options: ["==", "=", "===", "!="],
+        answer: "==",
+        explanation: "`==` is used to compare two values for equality in Java.",
+      },
+      {
+        question: "Which package is imported by default in Java?",
+        options: ["java.lang", "java.io", "java.util", "java.net"],
+        answer: "java.lang",
+        explanation:
+          "The `java.lang` package is automatically imported in every Java program.",
+      },
+      {
+        question: "What is the default value of a boolean variable in Java?",
+        options: ["false", "true", "0", "null"],
+        answer: "false",
+        explanation:
+          "By default, boolean variables in Java are initialized to `false`.",
+      },
+      {
+        question: "Which keyword is used to handle exceptions?",
+        options: ["try-catch", "throw", "error", "finalize"],
+        answer: "try-catch",
+        explanation:
+          "The `try-catch` block is used to handle exceptions in Java.",
+      },
+      {
+        question:
+          "Which concept allows multiple methods with the same name but different parameters?",
+        options: [
+          "Method overloading",
+          "Method overriding",
+          "Encapsulation",
+          "Abstraction",
+        ],
+        answer: "Method overloading",
+        explanation:
+          "Method overloading allows defining multiple methods with the same name but different parameter lists.",
+      },
+      {
+        question: "Which keyword is used to create an object in Java?",
+        options: ["new", "create", "init", "object"],
+        answer: "new",
+        explanation:
+          "The `new` keyword allocates memory and creates an instance of a class.",
+      },
+    ],
+  },
+  {
     subjectName: "Git",
     icon: "https://cdn-icons-png.flaticon.com/128/15466/15466163.png",
     questions: [
